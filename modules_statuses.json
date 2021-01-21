@@ -1,0 +1,10 @@
+{
+    "Admin": true,
+    "Customer": true,
+    "Category": true,
+    "Product": true,
+    "Order": true,
+    "Project": true,
+    "Media": true,
+    "AdminCategoryController": true
+}
