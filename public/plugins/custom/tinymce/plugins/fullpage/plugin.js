@@ -337,7 +337,7 @@
             {
               name: 'author',
               type: 'input',
-              label: 'Author'
+              label: 'نویسنده'
             },
             {
               name: 'docencoding',

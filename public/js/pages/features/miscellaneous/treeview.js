@@ -60,34 +60,34 @@ var KTTreeview = function () {
                     "responsive": false
                 },
                 'data': [{
-                        "text": "Same but with checkboxes",
+                        "text": "با قابلیت چک باکس",
                         "children": [{
-                            "text": "initially selected",
+                            "text": "انتخاب شده",
                             "state": {
                                 "selected": true
                             }
                         }, {
-                            "text": "custom icon",
+                            "text": "آیکون سفارشی",
                             "icon": "fa fa-warning text-danger"
                         }, {
-                            "text": "initially open",
+                            "text": "باز شده",
                             "icon" : "fa fa-folder text-default",
                             "state": {
                                 "opened": true
                             },
-                            "children": ["Another node"]
+                            "children": ["گره دیگر"]
                         }, {
-                            "text": "custom icon",
+                            "text": "آیکون سفارشی",
                             "icon": "fa fa-warning text-waring"
                         }, {
-                            "text": "disabled node",
+                            "text": "گره غیرفعال",
                             "icon": "fa fa-check text-success",
                             "state": {
                                 "disabled": true
                             }
                         }]
                     },
-                    "And wholerow selection"
+                    "انتخاب"
                 ]
             },
             "types" : {
@@ -110,46 +110,46 @@ var KTTreeview = function () {
                 // so that create works
                 "check_callback" : true,
                 'data': [{
-                        "text": "Parent Node",
+                        "text": "گره والد",
                         "children": [{
-                            "text": "Initially selected",
+                            "text": "انتخاب شده",
                             "state": {
                                 "selected": true
                             }
                         }, {
-                            "text": "Custom Icon",
+                            "text": "آیکون سفارشی",
                             "icon": "flaticon2-hourglass-1 text-danger"
                         }, {
-                            "text": "Initially open",
+                            "text": "باز شده",
                             "icon" : "fa fa-folder text-success",
                             "state": {
                                 "opened": true
                             },
                             "children": [
-                                {"text": "Another node", "icon" : "fa fa-file text-waring"}
+                                {"text": "گره دیگر", "icon" : "fa fa-file text-waring"}
                             ]
                         }, {
-                            "text": "Another Custom Icon",
+                            "text": "دیگر آیکون سفارشی",
                             "icon": "flaticon2-drop text-waring"
                         }, {
-                            "text": "Disabled Node",
+                            "text": "گره غیرفعال",
                             "icon": "fa fa-check text-success",
                             "state": {
                                 "disabled": true
                             }
                         }, {
-                            "text": "Sub Nodes",
+                            "text": "زیر گره",
                             "icon": "fa fa-folder text-danger",
                             "children": [
-                                {"text": "Item 1", "icon" : "fa fa-file text-waring"},
-                                {"text": "Item 2", "icon" : "fa fa-file text-success"},
-                                {"text": "Item 3", "icon" : "fa fa-file text-default"},
-                                {"text": "Item 4", "icon" : "fa fa-file text-danger"},
-                                {"text": "Item 5", "icon" : "fa fa-file text-info"}
+                                {"text": "آیتم 1", "icon" : "fa fa-file text-waring"},
+                                {"text": "آیتم 2", "icon" : "fa fa-file text-success"},
+                                {"text": "آیتم 3", "icon" : "fa fa-file text-default"},
+                                {"text": "آیتم 4", "icon" : "fa fa-file text-danger"},
+                                {"text": "آیتم 5", "icon" : "fa fa-file text-info"}
                             ]
                         }]
                     },
-                    "Another Node"
+                    "گره دیگر"
                 ]
             },
             "types" : {
@@ -174,46 +174,46 @@ var KTTreeview = function () {
                 // so that create works
                 "check_callback" : true,
                 'data': [{
-                        "text": "Parent Node",
+                        "text": "گره والد",
                         "children": [{
-                            "text": "Initially selected",
+                            "text": "انتخاب شده",
                             "state": {
                                 "selected": true
                             }
                         }, {
-                            "text": "Custom Icon",
+                            "text": "آیکون سفارشی",
                             "icon": "flaticon2-warning text-danger"
                         }, {
-                            "text": "Initially open",
+                            "text": "باز شده",
                             "icon" : "fa fa-folder text-success",
                             "state": {
                                 "opened": true
                             },
                             "children": [
-                                {"text": "Another node", "icon" : "fa fa-file text-waring"}
+                                {"text": "گره دیگر", "icon" : "fa fa-file text-waring"}
                             ]
                         }, {
-                            "text": "Another Custom Icon",
+                            "text": "دیگر آیکون سفارشی",
                             "icon": "flaticon2-bell-5 text-waring"
                         }, {
-                            "text": "Disabled Node",
+                            "text": "گره غیرفعال",
                             "icon": "fa fa-check text-success",
                             "state": {
                                 "disabled": true
                             }
                         }, {
-                            "text": "Sub Nodes",
+                            "text": "زیر گره",
                             "icon": "fa fa-folder text-danger",
                             "children": [
-                                {"text": "Item 1", "icon" : "fa fa-file text-waring"},
-                                {"text": "Item 2", "icon" : "fa fa-file text-success"},
-                                {"text": "Item 3", "icon" : "fa fa-file text-default"},
-                                {"text": "Item 4", "icon" : "fa fa-file text-danger"},
-                                {"text": "Item 5", "icon" : "fa fa-file text-info"}
+                                {"text": "آیتم 1", "icon" : "fa fa-file text-waring"},
+                                {"text": "آیتم 2", "icon" : "fa fa-file text-success"},
+                                {"text": "آیتم 3", "icon" : "fa fa-file text-default"},
+                                {"text": "آیتم 4", "icon" : "fa fa-file text-danger"},
+                                {"text": "آیتم 5", "icon" : "fa fa-file text-info"}
                             ]
                         }]
                     },
-                    "Another Node"
+                    "گره دیگر"
                 ]
             },
             "types" : {

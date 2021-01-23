@@ -81,7 +81,7 @@ class ProjectController extends Controller
         $user = $this->userService->getUserById(auth()->id());
         $projects = $this->projectService->getOwnerProject($user->id);
         $active = 4;
-        return view('owner.all_project', compact('active', 'user', 'projects'));
+        return view('owner.fa.all_project', compact('active', 'user', 'projects'));
     }
 
     public function owner_new_project()
@@ -89,7 +89,7 @@ class ProjectController extends Controller
         $user = $this->userService->getUserById(auth()->id());
         $active = 2;
         $categories = $this->categoryService->getAllCategory();
-        return view('owner.new_project', compact('active', 'user', 'categories'));
+        return view('owner.fa.new_project', compact('active', 'user', 'categories'));
     }
 
     public function owner_store_project(Request $request)
@@ -117,7 +117,7 @@ class ProjectController extends Controller
         $user = $this->userService->getUserById(auth()->id());
         $projects = $this->projectService->getOwnerActiveProject($user->id);
         $active = 3;
-        return view('owner.active_project', compact('active', 'user', 'projects'));
+        return view('owner.fa.active_project', compact('active', 'user', 'projects'));
     }
 
     public function view_project_proposal()

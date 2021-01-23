@@ -10,14 +10,14 @@ var KTDualListbox = function() {
         listBoxes.each(function() {
             var $this = $(this);
             // get titles
-            var availableTitle = ($this.attr('data-available-title') != null) ? $this.attr('data-available-title') : 'Available options';
-            var selectedTitle = ($this.attr('data-selected-title') != null) ? $this.attr('data-selected-title') : 'Selected options';
+            var availableTitle = ($this.attr('data-available-title') != null) ? $this.attr('data-available-title') : 'گزینه های موجود';
+            var selectedTitle = ($this.attr('data-selected-title') != null) ? $this.attr('data-selected-title') : 'انتخاب گزینه ها';
 
             // get button labels
-            var addLabel = ($this.attr('data-add') != null) ? $this.attr('data-add') : 'Add';
-            var removeLabel = ($this.attr('data-remove') != null) ? $this.attr('data-remove') : 'Remove';
-            var addAllLabel = ($this.attr('data-add-all') != null) ? $this.attr('data-add-all') : 'Add All';
-            var removeAllLabel = ($this.attr('data-remove-all') != null) ? $this.attr('data-remove-all') : 'Remove All';
+            var addLabel = ($this.attr('data-add') != null) ? $this.attr('data-add') : 'افزودن';
+            var removeLabel = ($this.attr('data-remove') != null) ? $this.attr('data-remove') : 'حذف';
+            var addAllLabel = ($this.attr('data-add-all') != null) ? $this.attr('data-add-all') : 'افزودن همه';
+            var removeAllLabel = ($this.attr('data-remove-all') != null) ? $this.attr('data-remove-all') : 'حذف همه';
 
             // get options
             var options = [];

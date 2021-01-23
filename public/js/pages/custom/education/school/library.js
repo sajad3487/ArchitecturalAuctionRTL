@@ -37,7 +37,7 @@ var KTAppsEducationSchoolLibrary = function() {
 			columns: [
 				 {
 					field: 'CompanyName',
-					title: 'Book',
+					title: 'کتاب',
 					width: 250,
 					template: function(data) {
 						var number = KTUtil.getRandomInt(1, 13);
@@ -47,10 +47,10 @@ var KTAppsEducationSchoolLibrary = function() {
 						var genreIndex = KTUtil.getRandomInt(1, 4);
 
 						var genre = {
-							1: {'title': 'Fiction'},
-							2: {'title': 'Drama'},
-							3: {'title': 'Classic'},
-							4: {'title': 'Thriller'}
+							1: {'title': 'داستان'},
+							2: {'title': 'نمایش'},
+							3: {'title': 'کلاسیک'},
+							4: {'title': 'دلهره آور'}
 						};
 
 						output = '<div class="d-flex align-items-center">\
@@ -67,7 +67,7 @@ var KTAppsEducationSchoolLibrary = function() {
 					}
 				}, {
 					field: 'CompanyAgent',
-					title: 'Author',
+					title: 'نویسنده',
 					template: function(row) {
 						var output = '';
 
@@ -77,7 +77,7 @@ var KTAppsEducationSchoolLibrary = function() {
 					}
 				}, {
 					field: 'IssueDate',
-					title: 'Issued',
+					title: 'صادر شده',
 					type: 'date',
 					width: 100,
 					format: 'MM/DD/YYYY',
@@ -85,9 +85,9 @@ var KTAppsEducationSchoolLibrary = function() {
 						var output = '';
 
 						var status = {
-							1: {'title': 'New', 'class': ' label-light-primary'},
-							2: {'title': 'Good', 'class': ' label-light-danger'},
-							3: {'title': 'Demaged', 'class': ' label-light-primary'}
+							1: {'title': 'جدید', 'class': ' label-light-primary'},
+							2: {'title': 'خوب', 'class': ' label-light-danger'},
+							3: {'title': 'آسیب دیده', 'class': ' label-light-primary'}
 						};
 
 						var index = KTUtil.getRandomInt(1, 3);
@@ -99,7 +99,7 @@ var KTAppsEducationSchoolLibrary = function() {
 					},
 				}, {
 					field: 'Status',
-					title: 'Status',
+					title: 'وضعیت',
 					autoHide: false,
 					width: 100,
 					// callback function support for column rendering
@@ -107,17 +107,17 @@ var KTAppsEducationSchoolLibrary = function() {
 						var index = KTUtil.getRandomInt(1, 4);
 
 						var status = {
-							1: {'title': 'Available', 'class': ' label-light-primary'},
-							2: {'title': 'In Use', 'class': ' label-light-danger'},
-							3: {'title': 'No Stock', 'class': ' label-light-info'},
-							4: {'title': 'Arriving', 'class': ' label-light-success'}
+							1: {'title': 'در دسترس', 'class': ' label-light-primary'},
+							2: {'title': 'در حال استفاده', 'class': ' label-light-danger'},
+							3: {'title': 'عدم موجودی', 'class': ' label-light-info'},
+							4: {'title': 'رسیدن', 'class': ' label-light-success'}
 						};
 
 						return '<span class="label label-lg font-weight-bold ' + status[index].class + ' label-inline">' + status[index].title + '</span>';
 					},
 				}, {
 					field: 'Actions',
-					title: 'Actions',
+					title: 'عملیات',
 					sortable: false,
 					width: 130,
 					overflow: 'visible',
@@ -139,24 +139,24 @@ var KTAppsEducationSchoolLibrary = function() {
 	                            <div class="dropdown-menu dropdown-menu-sm dropdown-menu-right">\
 	                                <ul class="navi flex-column navi-hover py-2">\
 	                                    <li class="navi-header font-weight-bolder text-uppercase font-size-xs text-primary pb-2">\
-	                                        Choose an action:\
+	                                        انتخاب عملیات:\
 	                                    </li>\
 	                                    <li class="navi-item">\
 	                                        <a href="#" class="navi-link">\
 	                                            <span class="navi-icon"><i class="la la-print"></i></span>\
-	                                            <span class="navi-text">Print</span>\
+	                                            <span class="navi-text">پرینت</span>\
 	                                        </a>\
 	                                    </li>\
 	                                    <li class="navi-item">\
 	                                        <a href="#" class="navi-link">\
 	                                            <span class="navi-icon"><i class="la la-copy"></i></span>\
-	                                            <span class="navi-text">Copy</span>\
+	                                            <span class="navi-text">کپی</span>\
 	                                        </a>\
 	                                    </li>\
 	                                    <li class="navi-item">\
 	                                        <a href="#" class="navi-link">\
 	                                            <span class="navi-icon"><i class="la la-file-excel-o"></i></span>\
-	                                            <span class="navi-text">Excel</span>\
+	                                            <span class="navi-text">اکسل</span>\
 	                                        </a>\
 	                                    </li>\
 	                                    <li class="navi-item">\

@@ -30,9 +30,9 @@ var KTCalendarBackgroundEvents = function() {
                 now: TODAY + 'T09:25:00', // just for demo
 
                 views: {
-                    dayGridMonth: { buttonText: 'month' },
-                    timeGridWeek: { buttonText: 'week' },
-                    timeGridDay: { buttonText: 'day' }
+                    dayGridMonth: { buttonText: 'ماه' },
+                    timeGridWeek: { buttonText: 'هفته' },
+                    timeGridDay: { buttonText: 'روز' }
                 },
 
                 defaultView: 'dayGridMonth',
@@ -44,112 +44,112 @@ var KTCalendarBackgroundEvents = function() {
                 businessHours: true, // display business hours
                 events: [
                     {
-                        title: 'All Day Event',
+                        title: 'رویداد یک روز کامل',
                         start: YM + '-01',
-                        description: 'Toto lorem ipsum dolor sit incid idunt ut',
+                        description:  'این یک متن تستی است برای توضیحات',
                         className: "fc-event-danger fc-event-solid-warning",
                         color: KTApp.getSettings()['colors']['theme']['base']['info'],
                         rendering: 'background'
                     },
                     {
-                        title: 'Reporting',
+                        title: 'گزارش نویسی',
                         start: YM + '-14T13:30:00',
-                        description: 'Lorem ipsum dolor incid idunt ut labore',
+                        description:  'این یک متن تستی است برای توضیحات',
                         end: YM + '-14',
                         className: "fc-event-success"
                     },
                     {
-                        title: 'Company Trip',
+                        title: 'سفر کاری',
                         start: YM + '-02',
-                        description: 'Lorem ipsum dolor sit tempor incid',
+                        description:  'این یک متن تستی است برای توضیحات',
                         end: YM + '-03',
                         className: "fc-event-primary"
                     },
                     {
-                        title: 'ICT Expo 2017 - Product Release',
+                        title:  'انتشار محصول',
                         start: YM + '-03',
-                        description: 'Lorem ipsum dolor sit tempor inci',
+                        description:  'این یک متن تستی است برای توضیحات',
                         end: YM + '-05',
                         className: "fc-event-light fc-event-solid-primary"
                     },
                     {
-                        title: 'Dinner',
+                        title: 'شام',
                         start: YM + '-12',
-                        description: 'Lorem ipsum dolor sit amet, conse ctetur',
+                        description:  'این یک متن تستی است برای توضیحات',
                         end: YM + '-10',
                         color: KTApp.getSettings()['colors']['theme']['base']['info'],
                         rendering: 'background'
                     },
                     {
                         id: 999,
-                        title: 'Repeating Event',
+                        title: 'تکرار رویداد',
                         start: YM + '-09T16:00:00',
-                        description: 'Lorem ipsum dolor sit ncididunt ut labore',
+                        description:  'این یک متن تستی است برای توضیحات',
                         className: "fc-event-danger"
                     },
                     {
                         id: 1000,
-                        title: 'Repeating Event',
-                        description: 'Lorem ipsum dolor sit amet, labore',
+                        title: 'تکرار رویداد',
+                        description:  'این یک متن تستی است برای توضیحات',
                         start: YM + '-16T16:00:00',
                         color: KTApp.getSettings()['colors']['theme']['base']['warning'],
                         rendering: 'background'
                     },
                     {
-                        title: 'Conference',
+                        title: 'کنفرانس',
                         start: YESTERDAY,
                         end: TOMORROW,
-                        description: 'Lorem ipsum dolor eius mod tempor labore',
+                        description:  'این یک متن تستی است برای توضیحات',
                         className: "fc-event-primary"
                     },
                     {
-                        title: 'Meeting',
+                        title: 'ملاقات',
                         start: TODAY + 'T10:30:00',
                         end: TODAY + 'T12:30:00',
-                        description: 'Lorem ipsum dolor eiu idunt ut labore',
+                        description:  'این یک متن تستی است برای توضیحات',
                         color: KTApp.getSettings()['colors']['theme']['base']['danger'],
                         rendering: 'background'
                     },
                     {
-                        title: 'Lunch',
+                        title: 'ناهار',
                         start: TODAY + 'T12:00:00',
                         className: "fc-event-info",
-                        description: 'Lorem ipsum dolor sit amet, ut labore'
+                        description:  'این یک متن تستی است برای توضیحات',
                     },
                     {
-                        title: 'Meeting',
+                        title: 'ملاقات',
                         start: TODAY + 'T14:30:00',
                         className: "fc-event-warning",
-                        description: 'Lorem ipsum conse ctetur adipi scing'
+                        description:  'این یک متن تستی است برای توضیحات',
                     },
                     {
-                        title: 'Happy Hour',
+                        title: 'ساعت تولد',
                         start: TODAY + 'T17:30:00',
                         className: "fc-event-info",
-                        description: 'Lorem ipsum dolor sit amet, conse ctetur',
+                        description:  'این یک متن تستی است برای توضیحات',
                         color: KTApp.getSettings()['colors']['theme']['base']['danger'],
                         rendering: 'background'
                     },
                     {
-                        title: 'Dinner',
+                        title: 'شام',
                         start: TOMORROW + 'T05:00:00',
                         className: "fc-event-solid-danger fc-event-light",
-                        description: 'Lorem ipsum dolor sit ctetur adipi scing'
+                       description:  'این یک متن تستی است برای توضیحات',
                     },
                     {
-                        title: 'Birthday Party',
+                        title: 'جشن تولد',
                         start: TOMORROW + 'T07:00:00',
                         className: "fc-event-primary",
-                        description: 'Lorem ipsum dolor sit amet, scing',
+                        description:  'این یک متن تستی است برای توضیحات',
                         color: KTApp.getSettings()['colors']['theme']['base']['danger'],
                         rendering: 'background'
                     },
                     {
-                        title: 'Click for Google',
+                        title: 'کلیک روی گوگل',
                         url: 'http://google.com/',
                         start: YM + '-28',
                         className: "fc-event-solid-info fc-event-light",
-                        description: 'Lorem ipsum dolor sit amet, labore',
+                        description:  'این یک متن تستی است برای توضیحات',
                         color: KTApp.getSettings()['colors']['theme']['base']['success'],
                         rendering: 'background'
                     }

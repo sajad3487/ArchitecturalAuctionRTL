@@ -4257,7 +4257,7 @@
         ]
       }
     ]);
-    var positionWithDirection = function (posName, decision, x, y, width, height) {
+    var positionWithمستقیمion = function (posName, decision, x, y, width, height) {
       var decisionX = decision.x - x;
       var decisionY = decision.y - y;
       var decisionWidth = decision.width;
@@ -4291,9 +4291,9 @@
       return origin.fold(function () {
         return NuPositionCss('absolute', Option.some(decision.x), Option.some(decision.y), Option.none(), Option.none());
       }, function (x, y, width, height) {
-        return positionWithDirection('absolute', decision, x, y, width, height);
+        return positionWithمستقیمion('absolute', decision, x, y, width, height);
       }, function (x, y, width, height) {
-        return positionWithDirection('fixed', decision, x, y, width, height);
+        return positionWithمستقیمion('fixed', decision, x, y, width, height);
       });
     };
     var toBox = function (origin, element) {
@@ -4658,12 +4658,12 @@
       return x;
     };
 
-    var onDirection = function (isLtr, isRtl) {
+    var onمستقیمion = function (isLtr, isRtl) {
       return function (element) {
-        return getDirection(element) === 'rtl' ? isRtl : isLtr;
+        return getمستقیمion(element) === 'rtl' ? isRtl : isLtr;
       };
     };
-    var getDirection = function (element) {
+    var getمستقیمion = function (element) {
       return get$4(element, 'direction') === 'rtl' ? 'rtl' : 'ltr';
     };
 
@@ -4705,7 +4705,7 @@
           return f(elem);
         });
       }).or(customRtl).getOr(defaultBottomRtl) : customRtl.getOr(defaultRtl);
-      var f = onDirection(ltr, rtl);
+      var f = onمستقیمion(ltr, rtl);
       return f(elem);
     };
 
@@ -6965,11 +6965,11 @@
       };
     };
     var west$2 = function (moveLeft, moveRight) {
-      var movement = onDirection(moveLeft, moveRight);
+      var movement = onمستقیمion(moveLeft, moveRight);
       return useH(movement);
     };
     var east$2 = function (moveLeft, moveRight) {
-      var movement = onDirection(moveRight, moveLeft);
+      var movement = onمستقیمion(moveRight, moveLeft);
       return useH(movement);
     };
     var useV = function (move) {
@@ -8270,7 +8270,7 @@
       var layeredState = LayeredState.init();
       var setup = function (container) {
         var componentMap = buildMenus(container, detail.data.primary, detail.data.menus);
-        var directory = toDirectory();
+        var directory = toمستقیمory();
         layeredState.setContents(detail.data.primary, componentMap, detail.data.expansions, directory);
         return layeredState.getPrimary();
       };
@@ -8288,7 +8288,7 @@
           });
         });
       };
-      var toDirectory = function (_container) {
+      var toمستقیمory = function (_container) {
         return map$2(detail.data.menus, function (data, _menuName) {
           return bind(data.items, function (item) {
             return item.type === 'separator' ? [] : [item.data.value];
@@ -9175,7 +9175,7 @@
 
     function NotificationManagerImpl (editor, extras, uiMothership) {
       var backstage = extras.backstage;
-      var getLayoutDirection = function (rel) {
+      var getLayoutمستقیمion = function (rel) {
         switch (rel) {
         case 'bc-bc':
           return south$3;
@@ -9256,17 +9256,17 @@
           },
           moveRel: function (element, rel) {
             if (rel !== 'banner') {
-              var layoutDirection_1 = getLayoutDirection(rel);
+              var layoutمستقیمion_1 = getLayoutمستقیمion(rel);
               var nodeAnchor = {
                 anchor: 'node',
                 root: body(),
                 node: Option.some(Element.fromDom(element)),
                 layouts: {
                   onRtl: function () {
-                    return [layoutDirection_1];
+                    return [layoutمستقیمion_1];
                   },
                   onLtr: function () {
-                    return [layoutDirection_1];
+                    return [layoutمستقیمion_1];
                   }
                 }
               };
@@ -35676,12 +35676,12 @@
         init: init
     });
 
-    var onDirection = function (isLtr, isRtl) {
+    var onمستقیمion = function (isLtr, isRtl) {
       return function (element) {
-        return getDirection(element) === 'rtl' ? isRtl : isLtr;
+        return getمستقیمion(element) === 'rtl' ? isRtl : isLtr;
       };
     };
-    var getDirection = function (element) {
+    var getمستقیمion = function (element) {
       return get$4(element, 'direction') === 'rtl' ? 'rtl' : 'ltr';
     };
 
@@ -35692,11 +35692,11 @@
       };
     };
     var west = function (moveLeft, moveRight) {
-      var movement = onDirection(moveLeft, moveRight);
+      var movement = onمستقیمion(moveLeft, moveRight);
       return useH(movement);
     };
     var east = function (moveLeft, moveRight) {
-      var movement = onDirection(moveRight, moveLeft);
+      var movement = onمستقیمion(moveRight, moveLeft);
       return useH(movement);
     };
     var useV = function (move) {
@@ -39060,9 +39060,9 @@
       if (xValue === model.xValue) {
         return model;
       }
-      var currentDirection = xValue - model.xValue > 0 ? SWIPING_LEFT : SWIPING_RIGHT;
+      var currentمستقیمion = xValue - model.xValue > 0 ? SWIPING_LEFT : SWIPING_RIGHT;
       var newPoint = {
-        direction: currentDirection,
+        direction: currentمستقیمion,
         xValue: xValue
       };
       var priorPoints = function () {
@@ -39070,7 +39070,7 @@
           return [];
         } else {
           var prev = model.points[model.points.length - 1];
-          return prev.direction === currentDirection ? model.points.slice(0, model.points.length - 1) : model.points;
+          return prev.direction === currentمستقیمion ? model.points.slice(0, model.points.length - 1) : model.points;
         }
       }();
       return {
@@ -39082,9 +39082,9 @@
       if (model.points.length === 0) {
         return SWIPING_NONE;
       } else {
-        var firstDirection = model.points[0].direction;
-        var lastDirection = model.points[model.points.length - 1].direction;
-        return firstDirection === SWIPING_RIGHT && lastDirection === SWIPING_RIGHT ? SWIPING_RIGHT : firstDirection === SWIPING_LEFT && lastDirection === SWIPING_LEFT ? SWIPING_LEFT : SWIPING_NONE;
+        var firstمستقیمion = model.points[0].direction;
+        var lastمستقیمion = model.points[model.points.length - 1].direction;
+        return firstمستقیمion === SWIPING_RIGHT && lastمستقیمion === SWIPING_RIGHT ? SWIPING_RIGHT : firstمستقیمion === SWIPING_LEFT && lastمستقیمion === SWIPING_LEFT ? SWIPING_LEFT : SWIPING_NONE;
       }
     };
 
@@ -40401,7 +40401,7 @@
       var layeredState = LayeredState.init();
       var setup = function (container) {
         var componentMap = buildMenus(container, detail.data.primary, detail.data.menus);
-        var directory = toDirectory();
+        var directory = toمستقیمory();
         layeredState.setContents(detail.data.primary, componentMap, detail.data.expansions, directory);
         return layeredState.getPrimary();
       };
@@ -40419,7 +40419,7 @@
           });
         });
       };
-      var toDirectory = function (_container) {
+      var toمستقیمory = function (_container) {
         return map(detail.data.menus, function (data, _menuName) {
           return bind(data.items, function (item) {
             return item.type === 'separator' ? [] : [item.data.value];

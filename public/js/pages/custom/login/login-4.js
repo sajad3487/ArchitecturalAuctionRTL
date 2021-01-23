@@ -21,14 +21,14 @@ var KTLogin = function() {
 						username: {
 							validators: {
 								notEmpty: {
-									message: 'Username is required'
+									message: 'وارد کردن نام کاربری اجباری است'
 								}
 							}
 						},
 						password: {
 							validators: {
 								notEmpty: {
-									message: 'Password is required'
+									message: 'وارد کردن کلمه عبور اجباری است'
 								}
 							}
 						}
@@ -46,7 +46,7 @@ var KTLogin = function() {
 		    )
 		    .on('core.form.valid', function() {
 				// Show loading state on button
-				KTUtil.btnWait(formSubmitButton, _buttonSpinnerClasses, "Please wait");
+				KTUtil.btnWait(formSubmitButton, _buttonSpinnerClasses, "لطفا صبر کنید");
 
 				// Simulate Ajax request
 				setTimeout(function() {
@@ -68,10 +68,10 @@ var KTLogin = function() {
 
 					if (response && typeof response === 'object' && response.status && response.status == 'success') {
 						Swal.fire({
-			                text: "All is cool! Now you submit this form",
+			                text: "همه چیز جالب است! اکنون این فرم را ارسال می کنید",
 			                icon: "success",
 			                buttonsStyling: false,
-							confirmButtonText: "Ok, got it!",
+							confirmButtonText: "باشه فهمیدم!",
 							customClass: {
 								confirmButton: "btn font-weight-bold btn-light-primary"
 							}
@@ -80,10 +80,10 @@ var KTLogin = function() {
 						});
 					} else {
 						Swal.fire({
-			                text: "Sorry, something went wrong, please try again.",
+			                text: "ببخشید ، مشکلی پیش آمد ، لطفاً دوباره امتحان کنید.",
 			                icon: "error",
 			                buttonsStyling: false,
-							confirmButtonText: "Ok, got it!",
+							confirmButtonText: "باشه فهمیدم!",
 							customClass: {
 								confirmButton: "btn font-weight-bold btn-light-primary"
 							}
@@ -96,10 +96,10 @@ var KTLogin = function() {
 		    })
 			.on('core.form.invalid', function() {
 				Swal.fire({
-					text: "Sorry, looks like there are some errors detected, please try again.",
+					text: "با عرض پوزش ، به نظر می رسد برخی از خطاها شناسایی شده اند ، لطفا دوباره امتحان کنید.",
 					icon: "error",
 					buttonsStyling: false,
-					confirmButtonText: "Ok, got it!",
+					confirmButtonText: "باشه فهمیدم!",
 					customClass: {
 						confirmButton: "btn font-weight-bold btn-light-primary"
 					}
@@ -126,10 +126,10 @@ var KTLogin = function() {
 						email: {
 							validators: {
 								notEmpty: {
-									message: 'Email is required'
+									message: 'ایمیل لازم است'
 								},
 								emailAddress: {
-									message: 'The value is not a valid email address'
+									message: "مقدار یک آدرس ایمیل معتبر نیست"
 								}
 							}
 						}
@@ -147,7 +147,7 @@ var KTLogin = function() {
 		    )
 		    .on('core.form.valid', function() {
 				// Show loading state on button
-				KTUtil.btnWait(formSubmitButton, _buttonSpinnerClasses, "Please wait");
+				KTUtil.btnWait(formSubmitButton, _buttonSpinnerClasses, "لطفا صبر کنید");
 
 				// Simulate Ajax request
 				setTimeout(function() {
@@ -156,10 +156,10 @@ var KTLogin = function() {
 		    })
 			.on('core.form.invalid', function() {
 				Swal.fire({
-					text: "Sorry, looks like there are some errors detected, please try again.",
+					text: "با عرض پوزش ، به نظر می رسد برخی از خطاها شناسایی شده اند ، لطفا دوباره امتحان کنید.",
 					icon: "error",
 					buttonsStyling: false,
-					confirmButtonText: "Ok, got it!",
+					confirmButtonText: "باشه فهمیدم!",
 					customClass: {
 						confirmButton: "btn font-weight-bold btn-light-primary"
 					}
@@ -189,31 +189,31 @@ var KTLogin = function() {
 					fname: {
 						validators: {
 							notEmpty: {
-								message: 'First name is required'
+								message: "نام لازم است"
 							}
 						}
 					},
 					lname: {
 						validators: {
 							notEmpty: {
-								message: 'Last Name is required'
+								message: "نام خانوادگی لازم است"
 							}
 						}
 					},
 					phone: {
 						validators: {
 							notEmpty: {
-								message: 'Phone is required'
+								message: "تلفن لازم است"
 							}
 						}
 					},
 					email: {
 						validators: {
 							notEmpty: {
-								message: 'Email is required'
+								message: 'ایمیل لازم است'
 							},
 							emailAddress: {
-								message: 'The value is not a valid email address'
+								message: "مقدار یک آدرس ایمیل معتبر نیست"
 							}
 						}
 					}
@@ -233,35 +233,35 @@ var KTLogin = function() {
 					address1: {
 						validators: {
 							notEmpty: {
-								message: 'Address is required'
+								message: "آدرس لازم است"
 							}
 						}
 					},
 					postcode: {
 						validators: {
 							notEmpty: {
-								message: 'Postcode is required'
+								message: "کدپستی لازم است"
 							}
 						}
 					},
 					city: {
 						validators: {
 							notEmpty: {
-								message: 'City is required'
+								message: "شهر مورد نیاز است"
 							}
 						}
 					},
 					state: {
 						validators: {
 							notEmpty: {
-								message: 'State is required'
+								message: "استان لازم است"
 							}
 						}
 					},
 					country: {
 						validators: {
 							notEmpty: {
-								message: 'Country is required'
+								message: "کشور مورد نیاز است"
 							}
 						}
 					}
@@ -288,10 +288,10 @@ var KTLogin = function() {
 					KTUtil.scrollTop();
 				} else {
 					Swal.fire({
-						text: "Sorry, looks like there are some errors detected, please try again.",
+						text: "با عرض پوزش ، به نظر می رسد برخی از خطاها شناسایی شده اند ، لطفا دوباره امتحان کنید.",
 						icon: "error",
 						buttonsStyling: false,
-						confirmButtonText: "Ok, got it!",
+						confirmButtonText: "باشه فهمیدم!",
 						customClass: {
 							confirmButton: "btn font-weight-bold btn-light-primary"
 						}

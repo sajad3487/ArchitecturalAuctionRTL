@@ -72,7 +72,7 @@ var KTFormWidgetsValidation = function () {
 
         // Select2
         $('#kt_select2').select2({
-            placeholder: "Select a state",
+            placeholder: "انتخاب یک گزینه",
         });
 
         $('#kt_select2').on('change', function(){
@@ -107,63 +107,63 @@ var KTFormWidgetsValidation = function () {
                     date: {
                         validators: {
                             notEmpty: {
-                                message: 'Date is required'
+                                message: 'تاریخ لازم است'
                             }
                         }
                     },
                     daterangepicker: {
                         validators: {
                             notEmpty: {
-                                message: 'Daterange is required'
+                                message: 'رنج تاریخ را وارد کنید'
                             }
                         }
                     },
                     datetime: {
                         validators: {
                             notEmpty: {
-                                message: 'Datetime is required'
+                                message: "تاریخ و زمان لازم است"
                             }
                         }
                     },
                     time: {
                         validators: {
                             notEmpty: {
-                                message: 'Time is required'
+                                message: 'زمان لازم است'
                             }
                         }
                     },
                     select: {
                         validators: {
                             notEmpty: {
-                                message: 'Select is required'
+                                message: "انتخاب لازم است"
                             }
                         }
                     },
                     select2: {
                         validators: {
                             notEmpty: {
-                                message: 'Select2 is required'
+                                message: "انتخاب لازم است"
                             }
                         }
                     },
                     typeahead: {
                         validators: {
                             notEmpty: {
-                                message: 'Typeahead is required'
+                                message: 'تایپ پیش نیاز است'
                             }
                         }
                     },
                     switch: {
                         validators: {
                             notEmpty: {
-                                message: 'Typeahead is required'
+                                message: 'تایپ پیش نیاز است'
                             }
                         }
                     },
                     markdown: {
                         validators: {
                             notEmpty: {
-                                message: 'Typeahead is required'
+                                message: 'تایپ پیش نیاز است'
                             }
                         }
                     },

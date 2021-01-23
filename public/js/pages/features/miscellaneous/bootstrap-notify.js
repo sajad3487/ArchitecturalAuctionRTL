@@ -15,9 +15,9 @@ var KTBootstrapNotifyDemo = function () {
         $('#kt_notify_btn').click(function() {
             var content = {};
 
-            content.message = 'New order has been placed';
+            content.message = 'سفارش جدید درج شده است';
             if ($('#kt_notify_title').prop('checked')) {
-                content.title = 'Notification Title';
+                content.title = 'عنوان نوتیفیکیشن';
             }
             if ($('#kt_notify_icon').val() != '') {
                 content.icon = 'icon ' + $('#kt_notify_icon').val();
@@ -53,25 +53,25 @@ var KTBootstrapNotifyDemo = function () {
 
             if ($('#kt_notify_progress').prop('checked')) {
                 setTimeout(function() {
-                    notify.update('message', '<strong>Saving</strong> Page Data.');
+                    notify.update('message', '<strong>ذخیره سازی</strong> اطلاعات.');
                     notify.update('type', 'primary');
                     notify.update('progress', 20);
                 }, 1000);
 
                 setTimeout(function() {
-                    notify.update('message', '<strong>Saving</strong> User Data.');
+                    notify.update('message', '<strong>ذخیره سازی</strong> اطلاعات کاربر.');
                     notify.update('type', 'warning');
                     notify.update('progress', 40);
                 }, 2000);
 
                 setTimeout(function() {
-                    notify.update('message', '<strong>Saving</strong> Profile Data.');
+                    notify.update('message', '<strong>ذخیره سازی</strong> اطلاعات پروفایل.');
                     notify.update('type', 'danger');
                     notify.update('progress', 65);
                 }, 3000);
 
                 setTimeout(function() {
-                    notify.update('message', '<strong>Checking</strong> for errors.');
+                    notify.update('message', '<strong>بررسی</strong> خطاها.');
                     notify.update('type', 'success');
                     notify.update('progress', 100);
                 }, 4000);

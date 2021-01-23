@@ -29,10 +29,10 @@ var KTWizard6 = function () {
 					KTUtil.scrollTop();
 				} else {
 					Swal.fire({
-						text: "Sorry, looks like there are some errors detected, please try again.",
+						text: "با عرض پوزش ، به نظر می رسد برخی از خطاها شناسایی شده اند ، لطفا دوباره امتحان کنید.",
 						icon: "error",
 						buttonsStyling: false,
-						confirmButtonText: "Ok, got it!",
+						confirmButtonText: "باشه فهمیدم!",
 						customClass: {
 							confirmButton: "btn font-weight-bold btn-light"
 						}
@@ -59,14 +59,14 @@ var KTWizard6 = function () {
 					firstname: {
 						validators: {
 							notEmpty: {
-								message: 'First name is required'
+								message: "نام لازم است"
 							}
 						}
 					},
 					lastname: {
 						validators: {
 							notEmpty: {
-								message: 'Last name is required'
+								message: 'نام خانوادگی را وارد کنید'
 							}
 						}
 					}
@@ -86,42 +86,42 @@ var KTWizard6 = function () {
 					address1: {
 						validators: {
 							notEmpty: {
-								message: 'Address is required'
+								message: "آدرس لازم است"
 							}
 						}
 					},
 					address2: {
 						validators: {
 							notEmpty: {
-								message: 'Address is required'
+								message: "آدرس لازم است"
 							}
 						}
 					},
 					postcode: {
 						validators: {
 							notEmpty: {
-								message: 'Postcode is required'
+								message: "کدپستی لازم است"
 							}
 						}
 					},
 					city: {
 						validators: {
 							notEmpty: {
-								message: 'City is required'
+								message: "شهر مورد نیاز است"
 							}
 						}
 					},
 					state: {
 						validators: {
 							notEmpty: {
-								message: 'State is required'
+								message: "استان لازم است"
 							}
 						}
 					},
 					country: {
 						validators: {
 							notEmpty: {
-								message: 'Country is required'
+								message: "کشور مورد نیاز است"
 							}
 						}
 					}

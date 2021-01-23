@@ -19,10 +19,10 @@ var KTamChartsChartsDemo = function() {
                 "country": "Japan",
                 "visits": 1809
             }, {
-                "country": "Germany",
+                "country": "آلمان",
                 "visits": 1322
             }, {
-                "country": "UK",
+                "country": "بریتانیا",
                 "visits": 1122
             }, {
                 "country": "France",
@@ -179,7 +179,7 @@ var KTamChartsChartsDemo = function() {
                 "year2004": 3.5,
                 "year2005": 4.2
             }, {
-                "country": "UK",
+                "country": "بریتانیا",
                 "year2004": 1.7,
                 "year2005": 3.1
             }, {
@@ -243,7 +243,7 @@ var KTamChartsChartsDemo = function() {
                 "year2004": 3.5,
                 "year2005": 4.2
             }, {
-                "country": "UK",
+                "country": "بریتانیا",
                 "year2004": 1.7,
                 "year2005": 3.1
             }, {
@@ -1130,94 +1130,94 @@ var KTamChartsChartsDemo = function() {
             "dataProvider": [{
                 "date": "2012-01-01",
                 "distance": 227,
-                "townName": "New York",
-                "townName2": "New York",
+                "townName": "نیویورک",
+                "townName2": "نیویورک",
                 "townSize": 25,
                 "latitude": 40.71,
                 "duration": 408
             }, {
                 "date": "2012-01-02",
                 "distance": 371,
-                "townName": "Washington",
+                "townName": "واشنگتن",
                 "townSize": 14,
                 "latitude": 38.89,
                 "duration": 482
             }, {
                 "date": "2012-01-03",
                 "distance": 433,
-                "townName": "Wilmington",
+                "townName": "ویلمینگتون",
                 "townSize": 6,
                 "latitude": 34.22,
                 "duration": 562
             }, {
                 "date": "2012-01-04",
                 "distance": 345,
-                "townName": "Jacksonville",
+                "townName": "جکسونویل",
                 "townSize": 7,
                 "latitude": 30.35,
                 "duration": 379
             }, {
                 "date": "2012-01-05",
                 "distance": 480,
-                "townName": "Miami",
-                "townName2": "Miami",
+                "townName": "میامی",
+                "townName2": "میامی",
                 "townSize": 10,
                 "latitude": 25.83,
                 "duration": 501
             }, {
                 "date": "2012-01-06",
                 "distance": 386,
-                "townName": "Tallahassee",
+                "townName": "ایران",
                 "townSize": 7,
                 "latitude": 30.46,
                 "duration": 443
             }, {
                 "date": "2012-01-07",
                 "distance": 348,
-                "townName": "New Orleans",
+                "townName": "نیواورلان",
                 "townSize": 10,
                 "latitude": 29.94,
                 "duration": 405
             }, {
                 "date": "2012-01-08",
                 "distance": 238,
-                "townName": "Houston",
-                "townName2": "Houston",
+                "townName": "هیوستون",
+                "townName2": "هیوستون",
                 "townSize": 16,
                 "latitude": 29.76,
                 "duration": 309
             }, {
                 "date": "2012-01-09",
                 "distance": 218,
-                "townName": "Dalas",
+                "townName": "دالاس",
                 "townSize": 17,
                 "latitude": 32.8,
                 "duration": 287
             }, {
                 "date": "2012-01-10",
                 "distance": 349,
-                "townName": "Oklahoma City",
+                "townName": "شهر اوکلاهما",
                 "townSize": 11,
                 "latitude": 35.49,
                 "duration": 485
             }, {
                 "date": "2012-01-11",
                 "distance": 603,
-                "townName": "Kansas City",
+                "townName": "شهر کانزاس",
                 "townSize": 10,
                 "latitude": 39.1,
                 "duration": 890
             }, {
                 "date": "2012-01-12",
                 "distance": 534,
-                "townName": "Denver",
-                "townName2": "Denver",
+                "townName": "دنور",
+                "townName2": "دنور",
                 "townSize": 18,
                 "latitude": 39.74,
                 "duration": 810
             }, {
                 "date": "2012-01-13",
-                "townName": "Salt Lake City",
+                "townName": "شهر "سالت لیک",
                 "townSize": 12,
                 "distance": 425,
                 "duration": 670,
@@ -1228,8 +1228,8 @@ var KTamChartsChartsDemo = function() {
                 "date": "2012-01-14",
                 "latitude": 36.1,
                 "duration": 470,
-                "townName": "Las Vegas",
-                "townName2": "Las Vegas"
+                "townName": "لاس وگاس",
+                "townName2": "لاس وگاس"
             }, {
                 "date": "2012-01-15"
             }, {
@@ -1289,7 +1289,7 @@ var KTamChartsChartsDemo = function() {
                 "labelPosition": "right",
                 "labelText": "[[townName2]]",
                 "legendValueText": "[[value]]/[[description]]",
-                "title": "latitude/city",
+                "title": "عرض جغرافیایی / شهر",
                 "fillAlphas": 0,
                 "valueField": "latitude",
                 "valueAxis": "latitudeAxis"
@@ -1346,22 +1346,22 @@ var KTamChartsChartsDemo = function() {
             "type": "radar",
             "theme": "light",
             "dataProvider": [{
-                "country": "Czech Republic",
+                "country": "جمهوری چک",
                 "litres": 156.9
             }, {
-                "country": "Ireland",
+                "country": "ایرلند",
                 "litres": 131.1
             }, {
-                "country": "Germany",
+                "country": "آلمان",
                 "litres": 115.8
             }, {
-                "country": "Australia",
+                "country": "استرالیا",
                 "litres": 109.9
             }, {
-                "country": "Austria",
+                "country": "اتریش",
                 "litres": 108.3
             }, {
-                "country": "UK",
+                "country": "بریتانیا",
                 "litres": 99
             }],
             "valueAxes": [{
@@ -1475,7 +1475,7 @@ var KTamChartsChartsDemo = function() {
                 "position": "right"
             },
             "graphs": [{
-                "title": "Trial #1",
+                "title": "محاکمه شماره 1",
                 "balloonText": "[[category]]: [[value]] m/s",
                 "bullet": "round",
                 "lineAlpha": 0,
@@ -1512,7 +1512,7 @@ var KTamChartsChartsDemo = function() {
                     [90, 9.9]
                 ]
             }, {
-                "title": "Trial #2",
+                "title": "محاکمه شماره 2",
                 "balloonText": "[[category]]: [[value]] m/s",
                 "bullet": "round",
                 "lineAlpha": 0,
@@ -1549,7 +1549,7 @@ var KTamChartsChartsDemo = function() {
                     [141, 0.9]
                 ]
             }, {
-                "title": "Trial #3",
+                "title": "محاکمه شماره 3",
                 "balloonText": "[[category]]: [[value]] m/s",
                 "bullet": "round",
                 "lineAlpha": 0,
@@ -1597,31 +1597,31 @@ var KTamChartsChartsDemo = function() {
             "type": "pie",
             "theme": "light",
             "dataProvider": [{
-                "country": "Lithuania",
+                "country": "لیتوانی",
                 "litres": 501.9
             }, {
-                "country": "Czech Republic",
+                "country": "جمهوری چک",
                 "litres": 301.9
             }, {
-                "country": "Ireland",
+                "country": "ایرلند",
                 "litres": 201.1
             }, {
-                "country": "Germany",
+                "country": "آلمان",
                 "litres": 165.8
             }, {
-                "country": "Australia",
+                "country": "استرالیا",
                 "litres": 139.9
             }, {
-                "country": "Austria",
+                "country": "اتریش",
                 "litres": 128.3
             }, {
-                "country": "UK",
+                "country": "بریتانیا",
                 "litres": 99
             }, {
-                "country": "Belgium",
+                "country": "بلژیک",
                 "litres": 60
             }, {
-                "country": "The Netherlands",
+                "country": "هلند",
                 "litres": 50
             }],
             "valueField": "litres",
@@ -1641,662 +1641,662 @@ var KTamChartsChartsDemo = function() {
          */
         var chartData = {
             "1995": [{
-                    "sector": "Agriculture",
+                    "sector": "کشاورزی",
                     "size": 6.6
                 },
                 {
-                    "sector": "Mining and Quarrying",
+                    "sector": "معدن و استخراج معادن",
                     "size": 0.6
                 },
                 {
-                    "sector": "Manufacturing",
+                    "sector": "ساخت",
                     "size": 23.2
                 },
                 {
-                    "sector": "Electricity and Water",
+                    "sector": "برق و آب",
                     "size": 2.2
                 },
                 {
-                    "sector": "Construction",
+                    "sector": "ساخت و ساز",
                     "size": 4.5
                 },
                 {
-                    "sector": "Trade (Wholesale, Retail, Motor)",
+                    "sector": " خرده فروشی, خرده فروشی, Motor)",
                     "size": 14.6
                 },
                 {
-                    "sector": "Transport and Communication",
+                    "sector": "حمل و نقل و ارتباطات",
                     "size": 9.3
                 },
                 {
-                    "sector": "Finance, real estate and business services",
+                    "sector": " real estate and business services, real estate and business services",
                     "size": 22.5
                 }
             ],
             "1996": [{
-                    "sector": "Agriculture",
+                    "sector": "کشاورزی",
                     "size": 6.4
                 },
                 {
-                    "sector": "Mining and Quarrying",
+                    "sector": "معدن و استخراج معادن",
                     "size": 0.5
                 },
                 {
-                    "sector": "Manufacturing",
+                    "sector": "ساخت",
                     "size": 22.4
                 },
                 {
-                    "sector": "Electricity and Water",
+                    "sector": "برق و آب",
                     "size": 2
                 },
                 {
-                    "sector": "Construction",
+                    "sector": "ساخت و ساز",
                     "size": 4.2
                 },
                 {
-                    "sector": "Trade (Wholesale, Retail, Motor)",
+                    "sector": " خرده فروشی, خرده فروشی, Motor)",
                     "size": 14.8
                 },
                 {
-                    "sector": "Transport and Communication",
+                    "sector": "حمل و نقل و ارتباطات",
                     "size": 9.7
                 },
                 {
-                    "sector": "Finance, real estate and business services",
+                    "sector": " real estate and business services, real estate and business services",
                     "size": 22
                 }
             ],
             "1997": [{
-                    "sector": "Agriculture",
+                    "sector": "کشاورزی",
                     "size": 6.1
                 },
                 {
-                    "sector": "Mining and Quarrying",
+                    "sector": "معدن و استخراج معادن",
                     "size": 0.2
                 },
                 {
-                    "sector": "Manufacturing",
+                    "sector": "ساخت",
                     "size": 20.9
                 },
                 {
-                    "sector": "Electricity and Water",
+                    "sector": "برق و آب",
                     "size": 1.8
                 },
                 {
-                    "sector": "Construction",
+                    "sector": "ساخت و ساز",
                     "size": 4.2
                 },
                 {
-                    "sector": "Trade (Wholesale, Retail, Motor)",
+                    "sector": " خرده فروشی, خرده فروشی, Motor)",
                     "size": 13.7
                 },
                 {
-                    "sector": "Transport and Communication",
+                    "sector": "حمل و نقل و ارتباطات",
                     "size": 9.4
                 },
                 {
-                    "sector": "Finance, real estate and business services",
+                    "sector": " real estate and business services, real estate and business services",
                     "size": 22.1
                 }
             ],
             "1998": [{
-                    "sector": "Agriculture",
+                    "sector": "کشاورزی",
                     "size": 6.2
                 },
                 {
-                    "sector": "Mining and Quarrying",
+                    "sector": "معدن و استخراج معادن",
                     "size": 0.3
                 },
                 {
-                    "sector": "Manufacturing",
+                    "sector": "ساخت",
                     "size": 21.4
                 },
                 {
-                    "sector": "Electricity and Water",
+                    "sector": "برق و آب",
                     "size": 1.9
                 },
                 {
-                    "sector": "Construction",
+                    "sector": "ساخت و ساز",
                     "size": 4.2
                 },
                 {
-                    "sector": "Trade (Wholesale, Retail, Motor)",
+                    "sector": " خرده فروشی, خرده فروشی, Motor)",
                     "size": 14.5
                 },
                 {
-                    "sector": "Transport and Communication",
+                    "sector": "حمل و نقل و ارتباطات",
                     "size": 10.6
                 },
                 {
-                    "sector": "Finance, real estate and business services",
+                    "sector": " real estate and business services, real estate and business services",
                     "size": 23
                 }
             ],
             "1999": [{
-                    "sector": "Agriculture",
+                    "sector": "کشاورزی",
                     "size": 5.7
                 },
                 {
-                    "sector": "Mining and Quarrying",
+                    "sector": "معدن و استخراج معادن",
                     "size": 0.2
                 },
                 {
-                    "sector": "Manufacturing",
+                    "sector": "ساخت",
                     "size": 20
                 },
                 {
-                    "sector": "Electricity and Water",
+                    "sector": "برق و آب",
                     "size": 1.8
                 },
                 {
-                    "sector": "Construction",
+                    "sector": "ساخت و ساز",
                     "size": 4.4
                 },
                 {
-                    "sector": "Trade (Wholesale, Retail, Motor)",
+                    "sector": " خرده فروشی, خرده فروشی, Motor)",
                     "size": 15.2
                 },
                 {
-                    "sector": "Transport and Communication",
+                    "sector": "حمل و نقل و ارتباطات",
                     "size": 10.5
                 },
                 {
-                    "sector": "Finance, real estate and business services",
+                    "sector": " real estate and business services, real estate and business services",
                     "size": 24.7
                 }
             ],
             "2000": [{
-                    "sector": "Agriculture",
+                    "sector": "کشاورزی",
                     "size": 5.1
                 },
                 {
-                    "sector": "Mining and Quarrying",
+                    "sector": "معدن و استخراج معادن",
                     "size": 0.3
                 },
                 {
-                    "sector": "Manufacturing",
+                    "sector": "ساخت",
                     "size": 20.4
                 },
                 {
-                    "sector": "Electricity and Water",
+                    "sector": "برق و آب",
                     "size": 1.7
                 },
                 {
-                    "sector": "Construction",
+                    "sector": "ساخت و ساز",
                     "size": 4
                 },
                 {
-                    "sector": "Trade (Wholesale, Retail, Motor)",
+                    "sector": " خرده فروشی, خرده فروشی, Motor)",
                     "size": 16.3
                 },
                 {
-                    "sector": "Transport and Communication",
+                    "sector": "حمل و نقل و ارتباطات",
                     "size": 10.7
                 },
                 {
-                    "sector": "Finance, real estate and business services",
+                    "sector": " real estate and business services, real estate and business services",
                     "size": 24.6
                 }
             ],
             "2001": [{
-                    "sector": "Agriculture",
+                    "sector": "کشاورزی",
                     "size": 5.5
                 },
                 {
-                    "sector": "Mining and Quarrying",
+                    "sector": "معدن و استخراج معادن",
                     "size": 0.2
                 },
                 {
-                    "sector": "Manufacturing",
+                    "sector": "ساخت",
                     "size": 20.3
                 },
                 {
-                    "sector": "Electricity and Water",
+                    "sector": "برق و آب",
                     "size": 1.6
                 },
                 {
-                    "sector": "Construction",
+                    "sector": "ساخت و ساز",
                     "size": 3.1
                 },
                 {
-                    "sector": "Trade (Wholesale, Retail, Motor)",
+                    "sector": " خرده فروشی, خرده فروشی, Motor)",
                     "size": 16.3
                 },
                 {
-                    "sector": "Transport and Communication",
+                    "sector": "حمل و نقل و ارتباطات",
                     "size": 10.7
                 },
                 {
-                    "sector": "Finance, real estate and business services",
+                    "sector": " real estate and business services, real estate and business services",
                     "size": 25.8
                 }
             ],
             "2002": [{
-                    "sector": "Agriculture",
+                    "sector": "کشاورزی",
                     "size": 5.7
                 },
                 {
-                    "sector": "Mining and Quarrying",
+                    "sector": "معدن و استخراج معادن",
                     "size": 0.2
                 },
                 {
-                    "sector": "Manufacturing",
+                    "sector": "ساخت",
                     "size": 20.5
                 },
                 {
-                    "sector": "Electricity and Water",
+                    "sector": "برق و آب",
                     "size": 1.6
                 },
                 {
-                    "sector": "Construction",
+                    "sector": "ساخت و ساز",
                     "size": 3.6
                 },
                 {
-                    "sector": "Trade (Wholesale, Retail, Motor)",
+                    "sector": " خرده فروشی, خرده فروشی, Motor)",
                     "size": 16.1
                 },
                 {
-                    "sector": "Transport and Communication",
+                    "sector": "حمل و نقل و ارتباطات",
                     "size": 10.7
                 },
                 {
-                    "sector": "Finance, real estate and business services",
+                    "sector": " real estate and business services, real estate and business services",
                     "size": 26
                 }
             ],
             "2003": [{
-                    "sector": "Agriculture",
+                    "sector": "کشاورزی",
                     "size": 4.9
                 },
                 {
-                    "sector": "Mining and Quarrying",
+                    "sector": "معدن و استخراج معادن",
                     "size": 0.2
                 },
                 {
-                    "sector": "Manufacturing",
+                    "sector": "ساخت",
                     "size": 19.4
                 },
                 {
-                    "sector": "Electricity and Water",
+                    "sector": "برق و آب",
                     "size": 1.5
                 },
                 {
-                    "sector": "Construction",
+                    "sector": "ساخت و ساز",
                     "size": 3.3
                 },
                 {
-                    "sector": "Trade (Wholesale, Retail, Motor)",
+                    "sector": " خرده فروشی, خرده فروشی, Motor)",
                     "size": 16.2
                 },
                 {
-                    "sector": "Transport and Communication",
+                    "sector": "حمل و نقل و ارتباطات",
                     "size": 11
                 },
                 {
-                    "sector": "Finance, real estate and business services",
+                    "sector": " real estate and business services, real estate and business services",
                     "size": 27.5
                 }
             ],
             "2004": [{
-                    "sector": "Agriculture",
+                    "sector": "کشاورزی",
                     "size": 4.7
                 },
                 {
-                    "sector": "Mining and Quarrying",
+                    "sector": "معدن و استخراج معادن",
                     "size": 0.2
                 },
                 {
-                    "sector": "Manufacturing",
+                    "sector": "ساخت",
                     "size": 18.4
                 },
                 {
-                    "sector": "Electricity and Water",
+                    "sector": "برق و آب",
                     "size": 1.4
                 },
                 {
-                    "sector": "Construction",
+                    "sector": "ساخت و ساز",
                     "size": 3.3
                 },
                 {
-                    "sector": "Trade (Wholesale, Retail, Motor)",
+                    "sector": " خرده فروشی, خرده فروشی, Motor)",
                     "size": 16.9
                 },
                 {
-                    "sector": "Transport and Communication",
+                    "sector": "حمل و نقل و ارتباطات",
                     "size": 10.6
                 },
                 {
-                    "sector": "Finance, real estate and business services",
+                    "sector": " real estate and business services, real estate and business services",
                     "size": 28.1
                 }
             ],
             "2005": [{
-                    "sector": "Agriculture",
+                    "sector": "کشاورزی",
                     "size": 4.3
                 },
                 {
-                    "sector": "Mining and Quarrying",
+                    "sector": "معدن و استخراج معادن",
                     "size": 0.2
                 },
                 {
-                    "sector": "Manufacturing",
+                    "sector": "ساخت",
                     "size": 18.1
                 },
                 {
-                    "sector": "Electricity and Water",
+                    "sector": "برق و آب",
                     "size": 1.4
                 },
                 {
-                    "sector": "Construction",
+                    "sector": "ساخت و ساز",
                     "size": 3.9
                 },
                 {
-                    "sector": "Trade (Wholesale, Retail, Motor)",
+                    "sector": " خرده فروشی, خرده فروشی, Motor)",
                     "size": 15.7
                 },
                 {
-                    "sector": "Transport and Communication",
+                    "sector": "حمل و نقل و ارتباطات",
                     "size": 10.6
                 },
                 {
-                    "sector": "Finance, real estate and business services",
+                    "sector": " real estate and business services, real estate and business services",
                     "size": 29.1
                 }
             ],
             "2006": [{
-                    "sector": "Agriculture",
+                    "sector": "کشاورزی",
                     "size": 4
                 },
                 {
-                    "sector": "Mining and Quarrying",
+                    "sector": "معدن و استخراج معادن",
                     "size": 0.2
                 },
                 {
-                    "sector": "Manufacturing",
+                    "sector": "ساخت",
                     "size": 16.5
                 },
                 {
-                    "sector": "Electricity and Water",
+                    "sector": "برق و آب",
                     "size": 1.3
                 },
                 {
-                    "sector": "Construction",
+                    "sector": "ساخت و ساز",
                     "size": 3.7
                 },
                 {
-                    "sector": "Trade (Wholesale, Retail, Motor)",
+                    "sector": " خرده فروشی, خرده فروشی, Motor)",
                     "size": 14.2
                 },
                 {
-                    "sector": "Transport and Communication",
+                    "sector": "حمل و نقل و ارتباطات",
                     "size": 12.1
                 },
                 {
-                    "sector": "Finance, real estate and business services",
+                    "sector": " real estate and business services, real estate and business services",
                     "size": 29.1
                 }
             ],
             "2007": [{
-                    "sector": "Agriculture",
+                    "sector": "کشاورزی",
                     "size": 4.7
                 },
                 {
-                    "sector": "Mining and Quarrying",
+                    "sector": "معدن و استخراج معادن",
                     "size": 0.2
                 },
                 {
-                    "sector": "Manufacturing",
+                    "sector": "ساخت",
                     "size": 16.2
                 },
                 {
-                    "sector": "Electricity and Water",
+                    "sector": "برق و آب",
                     "size": 1.2
                 },
                 {
-                    "sector": "Construction",
+                    "sector": "ساخت و ساز",
                     "size": 4.1
                 },
                 {
-                    "sector": "Trade (Wholesale, Retail, Motor)",
+                    "sector": " خرده فروشی, خرده فروشی, Motor)",
                     "size": 15.6
                 },
                 {
-                    "sector": "Transport and Communication",
+                    "sector": "حمل و نقل و ارتباطات",
                     "size": 11.2
                 },
                 {
-                    "sector": "Finance, real estate and business services",
+                    "sector": " real estate and business services, real estate and business services",
                     "size": 30.4
                 }
             ],
             "2008": [{
-                    "sector": "Agriculture",
+                    "sector": "کشاورزی",
                     "size": 4.9
                 },
                 {
-                    "sector": "Mining and Quarrying",
+                    "sector": "معدن و استخراج معادن",
                     "size": 0.3
                 },
                 {
-                    "sector": "Manufacturing",
+                    "sector": "ساخت",
                     "size": 17.2
                 },
                 {
-                    "sector": "Electricity and Water",
+                    "sector": "برق و آب",
                     "size": 1.4
                 },
                 {
-                    "sector": "Construction",
+                    "sector": "ساخت و ساز",
                     "size": 5.1
                 },
                 {
-                    "sector": "Trade (Wholesale, Retail, Motor)",
+                    "sector": " خرده فروشی, خرده فروشی, Motor)",
                     "size": 15.4
                 },
                 {
-                    "sector": "Transport and Communication",
+                    "sector": "حمل و نقل و ارتباطات",
                     "size": 11.1
                 },
                 {
-                    "sector": "Finance, real estate and business services",
+                    "sector": " real estate and business services, real estate and business services",
                     "size": 28.4
                 }
             ],
             "2009": [{
-                    "sector": "Agriculture",
+                    "sector": "کشاورزی",
                     "size": 4.7
                 },
                 {
-                    "sector": "Mining and Quarrying",
+                    "sector": "معدن و استخراج معادن",
                     "size": 0.3
                 },
                 {
-                    "sector": "Manufacturing",
+                    "sector": "ساخت",
                     "size": 16.4
                 },
                 {
-                    "sector": "Electricity and Water",
+                    "sector": "برق و آب",
                     "size": 1.9
                 },
                 {
-                    "sector": "Construction",
+                    "sector": "ساخت و ساز",
                     "size": 4.9
                 },
                 {
-                    "sector": "Trade (Wholesale, Retail, Motor)",
+                    "sector": " خرده فروشی, خرده فروشی, Motor)",
                     "size": 15.5
                 },
                 {
-                    "sector": "Transport and Communication",
+                    "sector": "حمل و نقل و ارتباطات",
                     "size": 10.9
                 },
                 {
-                    "sector": "Finance, real estate and business services",
+                    "sector": " real estate and business services, real estate and business services",
                     "size": 27.9
                 }
             ],
             "2010": [{
-                    "sector": "Agriculture",
+                    "sector": "کشاورزی",
                     "size": 4.2
                 },
                 {
-                    "sector": "Mining and Quarrying",
+                    "sector": "معدن و استخراج معادن",
                     "size": 0.3
                 },
                 {
-                    "sector": "Manufacturing",
+                    "sector": "ساخت",
                     "size": 16.2
                 },
                 {
-                    "sector": "Electricity and Water",
+                    "sector": "برق و آب",
                     "size": 2.2
                 },
                 {
-                    "sector": "Construction",
+                    "sector": "ساخت و ساز",
                     "size": 4.3
                 },
                 {
-                    "sector": "Trade (Wholesale, Retail, Motor)",
+                    "sector": " خرده فروشی, خرده فروشی, Motor)",
                     "size": 15.7
                 },
                 {
-                    "sector": "Transport and Communication",
+                    "sector": "حمل و نقل و ارتباطات",
                     "size": 10.2
                 },
                 {
-                    "sector": "Finance, real estate and business services",
+                    "sector": " real estate and business services, real estate and business services",
                     "size": 28.8
                 }
             ],
             "2011": [{
-                    "sector": "Agriculture",
+                    "sector": "کشاورزی",
                     "size": 4.1
                 },
                 {
-                    "sector": "Mining and Quarrying",
+                    "sector": "معدن و استخراج معادن",
                     "size": 0.3
                 },
                 {
-                    "sector": "Manufacturing",
+                    "sector": "ساخت",
                     "size": 14.9
                 },
                 {
-                    "sector": "Electricity and Water",
+                    "sector": "برق و آب",
                     "size": 2.3
                 },
                 {
-                    "sector": "Construction",
+                    "sector": "ساخت و ساز",
                     "size": 5
                 },
                 {
-                    "sector": "Trade (Wholesale, Retail, Motor)",
+                    "sector": " خرده فروشی, خرده فروشی, Motor)",
                     "size": 17.3
                 },
                 {
-                    "sector": "Transport and Communication",
+                    "sector": "حمل و نقل و ارتباطات",
                     "size": 10.2
                 },
                 {
-                    "sector": "Finance, real estate and business services",
+                    "sector": " real estate and business services, real estate and business services",
                     "size": 27.2
                 }
             ],
             "2012": [{
-                    "sector": "Agriculture",
+                    "sector": "کشاورزی",
                     "size": 3.8
                 },
                 {
-                    "sector": "Mining and Quarrying",
+                    "sector": "معدن و استخراج معادن",
                     "size": 0.3
                 },
                 {
-                    "sector": "Manufacturing",
+                    "sector": "ساخت",
                     "size": 14.9
                 },
                 {
-                    "sector": "Electricity and Water",
+                    "sector": "برق و آب",
                     "size": 2.6
                 },
                 {
-                    "sector": "Construction",
+                    "sector": "ساخت و ساز",
                     "size": 5.1
                 },
                 {
-                    "sector": "Trade (Wholesale, Retail, Motor)",
+                    "sector": " خرده فروشی, خرده فروشی, Motor)",
                     "size": 15.8
                 },
                 {
-                    "sector": "Transport and Communication",
+                    "sector": "حمل و نقل و ارتباطات",
                     "size": 10.7
                 },
                 {
-                    "sector": "Finance, real estate and business services",
+                    "sector": " real estate and business services, real estate and business services",
                     "size": 28
                 }
             ],
             "2013": [{
-                    "sector": "Agriculture",
+                    "sector": "کشاورزی",
                     "size": 3.7
                 },
                 {
-                    "sector": "Mining and Quarrying",
+                    "sector": "معدن و استخراج معادن",
                     "size": 0.2
                 },
                 {
-                    "sector": "Manufacturing",
+                    "sector": "ساخت",
                     "size": 14.9
                 },
                 {
-                    "sector": "Electricity and Water",
+                    "sector": "برق و آب",
                     "size": 2.7
                 },
                 {
-                    "sector": "Construction",
+                    "sector": "ساخت و ساز",
                     "size": 5.7
                 },
                 {
-                    "sector": "Trade (Wholesale, Retail, Motor)",
+                    "sector": " خرده فروشی, خرده فروشی, Motor)",
                     "size": 16.5
                 },
                 {
-                    "sector": "Transport and Communication",
+                    "sector": "حمل و نقل و ارتباطات",
                     "size": 10.5
                 },
                 {
-                    "sector": "Finance, real estate and business services",
+                    "sector": " real estate and business services, real estate and business services",
                     "size": 26.6
                 }
             ],
             "2014": [{
-                    "sector": "Agriculture",
+                    "sector": "کشاورزی",
                     "size": 3.9
                 },
                 {
-                    "sector": "Mining and Quarrying",
+                    "sector": "معدن و استخراج معادن",
                     "size": 0.2
                 },
                 {
-                    "sector": "Manufacturing",
+                    "sector": "ساخت",
                     "size": 14.5
                 },
                 {
-                    "sector": "Electricity and Water",
+                    "sector": "برق و آب",
                     "size": 2.7
                 },
                 {
-                    "sector": "Construction",
+                    "sector": "ساخت و ساز",
                     "size": 5.6
                 },
                 {
-                    "sector": "Trade (Wholesale, Retail, Motor)",
+                    "sector": " خرده فروشی, خرده فروشی, Motor)",
                     "size": 16.6
                 },
                 {
-                    "sector": "Transport and Communication",
+                    "sector": "حمل و نقل و ارتباطات",
                     "size": 10.5
                 },
                 {
-                    "sector": "Finance, real estate and business services",
+                    "sector": " real estate and business services, real estate and business services",
                     "size": 26.5
                 }
             ]
@@ -2317,7 +2317,7 @@ var KTamChartsChartsDemo = function() {
             "pullOutRadius": 20,
             "marginTop": 30,
             "titles": [{
-                "text": "South African Economy"
+                "text": "اقتصاد آفریقای جنوبی"
             }],
             "allLabels": [{
                 "y": "54%",

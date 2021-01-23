@@ -11,32 +11,32 @@ var KTKanbanBoardDemo = function() {
             widthBoard: '250px',
             boards: [{
                     'id': '_inprocess',
-                    'title': 'In Process',
+                    'title': 'در جریان',
                     'item': [{
-                            'title': '<span class="font-weight-bold">You can drag me too</span>'
+                            'title': '<span class="font-weight-bold">می تونید من رو درگ کنید</span>'
                         },
                         {
-                            'title': '<span class="font-weight-bold">Buy Milk</span>'
+                            'title': '<span class="font-weight-bold">خرید</span>'
                         }
                     ]
                 }, {
                     'id': '_working',
-                    'title': 'Working',
+                    'title': 'کار کردن',
                     'item': [{
-                            'title': '<span class="font-weight-bold">Do Something!</span>'
+                            'title': '<span class="font-weight-bold">کاری بکنید!</span>'
                         },
                         {
-                            'title': '<span class="font-weight-bold">Run?</span>'
+                            'title': '<span class="font-weight-bold">اجرا کردن</span>'
                         }
                     ]
                 }, {
                     'id': '_done',
-                    'title': 'Done',
+                    'title': 'انجام شده',
                     'item': [{
-                            'title': '<span class="font-weight-bold">All right</span>'
+                            'title': '<span class="font-weight-bold">خیلی خوب</span>'
                         },
                         {
-                            'title': '<span class="font-weight-bold">Ok!</span>'
+                            'title': '<span class="font-weight-bold">اکی</span>'
                         }
                     ]
                 }
@@ -51,40 +51,40 @@ var KTKanbanBoardDemo = function() {
             widthBoard: '250px',
             boards: [{
                     'id': '_inprocess',
-                    'title': 'In Process',
+                    'title': 'در جریان',
                     'class': 'primary',
                     'item': [{
-                            'title': '<span class="font-weight-bold">You can drag me too</span>',
+                            'title': '<span class="font-weight-bold">می تونید من رو درگ کنید</span>',
                             'class': 'light-primary',
                         },
                         {
-                            'title': '<span class="font-weight-bold">Buy Milk</span>',
+                            'title': '<span class="font-weight-bold">خرید</span>',
                             'class': 'light-primary',
                         }
                     ]
                 }, {
                     'id': '_working',
-                    'title': 'Working',
+                    'title': 'کار کردن',
                     'class': 'success',
                     'item': [{
-                            'title': '<span class="font-weight-bold">Do Something!</span>',
+                            'title': '<span class="font-weight-bold">کاری بکنید!</span>',
                             'class': 'light-success',
                         },
                         {
-                            'title': '<span class="font-weight-bold">Run?</span>',
+                            'title': '<span class="font-weight-bold">اجرا کردن</span>',
                             'class': 'light-success',
                         }
                     ]
                 }, {
                     'id': '_done',
-                    'title': 'Done',
+                    'title': 'انجام شده',
                     'class': 'danger',
                     'item': [{
-                            'title': '<span class="font-weight-bold">All right</span>',
+                            'title': '<span class="font-weight-bold">خیلی خوب</span>',
                             'class': 'light-danger',
                         },
                         {
-                            'title': '<span class="font-weight-bold">Ok!</span>',
+                            'title': '<span class="font-weight-bold">اکی</span>',
                             'class': 'light-danger',
                         }
                     ]
@@ -103,58 +103,58 @@ var KTKanbanBoardDemo = function() {
             },
             boards: [{
                     'id': '_todo',
-                    'title': 'To Do',
+                    'title': 'انجام بده',
                     'class': 'light-primary',
                     'dragTo': ['_working'],
                     'item': [{
-                            'title': 'My Task Test',
+                            'title': 'انجام وظیفه',
                             'class': 'primary'
                         },
                         {
-                            'title': 'Buy Milk',
+                            'title': 'خرید',
                             'class': 'primary'
                         }
                     ]
                 },
                 {
                     'id': '_working',
-                    'title': 'Working',
+                    'title': 'کار کردن',
                     'class': 'light-warning',
                     'item': [{
-                            'title': 'Do Something!',
+                            'title': 'کاری بکنید!',
                             'class': 'warning'
                         },
                         {
-                            'title': 'Run?',
+                            'title': 'اجرا کردن',
                             'class': 'warning'
                         }
                     ]
                 },
                 {
                     'id': '_done',
-                    'title': 'Done',
+                    'title': 'انجام شده',
                     'class': 'light-success',
                     'dragTo': ['_working'],
                     'item': [{
-                            'title': 'All right',
+                            'title': 'خیلی خوب',
                             'class': 'success'
                         },
                         {
-                            'title': 'Ok!',
+                            'title': 'اکی',
                             'class': 'success'
                         }
                     ]
                 },
                 {
                     'id': '_notes',
-                    'title': 'Notes',
+                    'title': 'نکات',
                     'class': 'light-danger',
                     'item': [{
-                            'title': 'Warning Task',
+                            'title': 'دست نزن',
                             'class': 'danger'
                         },
                         {
-                            'title': 'Do not enter',
+                            'title': 'وارد نشوید',
                             'class': 'danger'
                         }
                     ]
@@ -172,7 +172,7 @@ var KTKanbanBoardDemo = function() {
             },
             boards: [{
                     'id': '_backlog',
-                    'title': 'Backlog',
+                    'title': 'جمع شدن',
                     'class': 'light-dark',
                     'item': [{
                             'title': `
@@ -181,8 +181,8 @@ var KTKanbanBoardDemo = function() {
                         	            <img alt="Pic" src="assets/media/users/300_24.jpg" />
                         	        </div>
                         	        <div class="d-flex flex-column align-items-start">
-                        	            <span class="text-dark-50 font-weight-bold mb-1">SEO Optimization</span>
-                        	            <span class="label label-inline label-light-success font-weight-bold">In progress</span>
+                        	            <span class="text-dark-50 font-weight-bold mb-1">بهینه سازی سئو</span>
+                        	            <span class="label label-inline label-light-success font-weight-bold">در حال پردازش</span>
                         	        </div>
                         	    </div>
                             `,
@@ -194,8 +194,8 @@ var KTKanbanBoardDemo = function() {
                         	            <span class="symbol-label font-size-h4">A.D</span>
                         	        </div>
                         	        <div class="d-flex flex-column align-items-start">
-                        	            <span class="text-dark-50 font-weight-bold mb-1">Finance</span>
-                        	            <span class="label label-inline label-light-danger font-weight-bold">Pending</span>
+                        	            <span class="text-dark-50 font-weight-bold mb-1">حسابرس</span>
+                        	            <span class="label label-inline label-light-danger font-weight-bold">در حال انجام</span>
                         	        </div>
                         	    </div>
                             `,
@@ -204,7 +204,7 @@ var KTKanbanBoardDemo = function() {
                 },
                 {
                     'id': '_todo',
-                    'title': 'To Do',
+                    'title': 'انجام بده',
                     'class': 'light-danger',
                     'item': [{
                             'title': `
@@ -213,8 +213,8 @@ var KTKanbanBoardDemo = function() {
                         	            <img alt="Pic" src="assets/media/users/300_16.jpg" />
                         	        </div>
                         	        <div class="d-flex flex-column align-items-start">
-                        	            <span class="text-dark-50 font-weight-bold mb-1">Server Setup</span>
-                        	            <span class="label label-inline label-light-dark font-weight-bold">Completed</span>
+                        	            <span class="text-dark-50 font-weight-bold mb-1">راه اندازی سرور</span>
+                        	            <span class="label label-inline label-light-dark font-weight-bold">تکمیل شده</span>
                         	        </div>
                         	    </div>
                             `,
@@ -226,8 +226,8 @@ var KTKanbanBoardDemo = function() {
                         	            <img alt="Pic" src="assets/media/users/300_15.jpg" />
                         	        </div>
                         	        <div class="d-flex flex-column align-items-start">
-                        	            <span class="text-dark-50 font-weight-bold mb-1">Report Generation</span>
-                        	            <span class="label label-inline label-light-warning font-weight-bold">Due</span>
+                        	            <span class="text-dark-50 font-weight-bold mb-1">گزارشگر</span>
+                        	            <span class="label label-inline label-light-warning font-weight-bold">خبر</span>
                         	        </div>
                         	    </div>
                             `,
@@ -236,7 +236,7 @@ var KTKanbanBoardDemo = function() {
                 },
                 {
                     'id': '_working',
-                    'title': 'Working',
+                    'title': 'کار کردن',
                     'class': 'light-primary',
                     'item': [{
                             'title': `
@@ -245,8 +245,8 @@ var KTKanbanBoardDemo = function() {
                             	         <img alt="Pic" src="assets/media/users/300_24.jpg" />
                         	        </div>
                         	        <div class="d-flex flex-column align-items-start">
-                        	            <span class="text-dark-50 font-weight-bold mb-1">Marketing</span>
-                        	            <span class="label label-inline label-light-danger font-weight-bold">Planning</span>
+                        	            <span class="text-dark-50 font-weight-bold mb-1">بازاریابی</span>
+                        	            <span class="label label-inline label-light-danger font-weight-bold">نقشه ها</span>
                         	        </div>
                         	    </div>
                             `,
@@ -258,8 +258,8 @@ var KTKanbanBoardDemo = function() {
                         	            <span class="symbol-label font-size-h4">A.P</span>
                         	        </div>
                         	        <div class="d-flex flex-column align-items-start">
-                        	            <span class="text-dark-50 font-weight-bold mb-1">Finance</span>
-                        	            <span class="label label-inline label-light-primary font-weight-bold">Done</span>
+                        	            <span class="text-dark-50 font-weight-bold mb-1">حسابرس</span>
+                        	            <span class="label label-inline label-light-primary font-weight-bold">انجام شده</span>
                         	        </div>
                         	    </div>
                             `,
@@ -268,7 +268,7 @@ var KTKanbanBoardDemo = function() {
                 },
                 {
                     'id': '_done',
-                    'title': 'Done',
+                    'title': 'انجام شده',
                     'class': 'light-success',
                     'item': [{
                             'title': `
@@ -277,8 +277,8 @@ var KTKanbanBoardDemo = function() {
                         	            <img alt="Pic" src="assets/media/users/300_11.jpg" />
                         	        </div>
                         	        <div class="d-flex flex-column align-items-start">
-                        	            <span class="text-dark-50 font-weight-bold mb-1">SEO Optimization</span>
-                        	            <span class="label label-inline label-light-success font-weight-bold">In progress</span>
+                        	            <span class="text-dark-50 font-weight-bold mb-1">بهینه سازی سئو</span>
+                        	            <span class="label label-inline label-light-success font-weight-bold">در حال پردازش</span>
                         	        </div>
                         	    </div>
                             `,
@@ -290,8 +290,8 @@ var KTKanbanBoardDemo = function() {
                         	            <img alt="Pic" src="assets/media/users/300_20.jpg" />
                         	        </div>
                         	        <div class="d-flex flex-column align-items-start">
-                        	            <span class="text-dark-50 font-weight-bold mb-1">Product Team</span>
-                        	            <span class="label label-inline label-light-danger font-weight-bold">In progress</span>
+                        	            <span class="text-dark-50 font-weight-bold mb-1">مدیر تیم</span>
+                        	            <span class="label label-inline label-light-danger font-weight-bold">در حال پردازش</span>
                         	        </div>
                         	    </div>
                             `,
@@ -300,7 +300,7 @@ var KTKanbanBoardDemo = function() {
                 },
                 {
                     'id': '_deploy',
-                    'title': 'Deploy',
+                    'title': 'استقرار',
                     'class': 'light-primary',
                     'item': [{
                             'title': `
@@ -309,8 +309,8 @@ var KTKanbanBoardDemo = function() {
                         	            <span class="symbol-label font-size-h4">D.L</span>
                         	        </div>
                         	        <div class="d-flex flex-column align-items-start">
-                        	            <span class="text-dark-50 font-weight-bold mb-1">SEO Optimization</span>
-                        	            <span class="label label-inline label-light-success font-weight-bold">In progress</span>
+                        	            <span class="text-dark-50 font-weight-bold mb-1">بهینه سازی سئو</span>
+                        	            <span class="label label-inline label-light-success font-weight-bold">در حال پردازش</span>
                         	        </div>
                         	    </div>
                             `,
@@ -322,8 +322,8 @@ var KTKanbanBoardDemo = function() {
                         	            <span class="symbol-label font-size-h4">E.K</span>
                         	        </div>
                         	        <div class="d-flex flex-column align-items-start">
-                        	            <span class="text-dark-50 font-weight-bold mb-1">Requirement Study</span>
-                        	            <span class="label label-inline label-light-warning font-weight-bold">Scheduled</span>
+                        	            <span class="text-dark-50 font-weight-bold mb-1">مطالعه </span>
+                        	            <span class="label label-inline label-light-warning font-weight-bold">برنامه ریزی شده</span>
                         	        </div>
                         	    </div>
                             `,
@@ -343,8 +343,8 @@ var KTKanbanBoardDemo = function() {
                                 <img alt="Pic" src="assets/media/users/300_14.jpg" />
                             </div>
                             <div class="d-flex flex-column align-items-start">
-                                <span class="text-dark-50 font-weight-bold mb-1">Requirement Study</span>
-                                <span class="label label-inline label-light-success font-weight-bold">Scheduled</span>
+                                <span class="text-dark-50 font-weight-bold mb-1">مطالعه </span>
+                                <span class="label label-inline label-light-success font-weight-bold">برنامه ریزی شده</span>
                             </div>
                         </div>
                     `
@@ -378,7 +378,7 @@ var KTKanbanBoardDemo = function() {
                                     </div>
                                     <div class="d-flex flex-column align-items-start">
                                     <span class="text-dark-50 font-weight-bold mb-1">New Project</span>
-                                    <span class="label label-inline label-light-danger font-weight-bold">Pending</span>
+                                    <span class="label label-inline label-light-danger font-weight-bold">در حال انجام</span>
                                 </div>
                             </div>
                         `}

@@ -30,10 +30,10 @@ var KTProjectsAdd = function () {
 					KTUtil.scrollTop();
 				} else {
 					Swal.fire({
-						text: "Sorry, looks like there are some errors detected, please try again.",
+						text: "با عرض پوزش ، به نظر می رسد برخی از خطاها شناسایی شده اند ، لطفا دوباره امتحان کنید.",
 						icon: "error",
 						buttonsStyling: false,
-						confirmButtonText: "Ok, got it!",
+						confirmButtonText: "باشه فهمیدم!",
 						customClass: {
 							confirmButton: "btn font-weight-bold btn-light"
 						}
@@ -61,49 +61,49 @@ var KTProjectsAdd = function () {
 					projectname: {
 						validators: {
 							notEmpty: {
-								message: 'Project name is required'
+								message: 'نام پروژه ضروری است'
 							}
 						}
 					},
 					projectowner: {
 						validators: {
 							notEmpty: {
-								message: 'Project owner is required'
+								message: "مالک پروژه لازم است"
 							}
 						}
 					},
 					customername: {
 						validators: {
 							notEmpty: {
-								message: 'Customer name is required'
+								message: "نام مشتری لازم است"
 							}
 						}
 					},
 					phone: {
 						validators: {
 							notEmpty: {
-								message: 'Phone is required'
+								message: "تلفن لازم است"
 							},
 							phone: {
 								country: 'US',
-								message: 'The value is not a valid US phone number. (e.g 5554443333)'
+								message: "این تعداد شماره تلفن معتبر ایالات متحده نیست. (به عنوان مثال 5554443333) "
 							}
 						}
 					},
 					email: {
 						validators: {
 							notEmpty: {
-								message: 'Email is required'
+								message: 'ایمیل لازم است'
 							},
 							emailAddress: {
-								message: 'The value is not a valid email address'
+								message: "مقدار یک آدرس ایمیل معتبر نیست"
 							}
 						}
 					},
 					companywebsite: {
 						validators: {
 							notEmpty: {
-								message: 'Website URL is required'
+								message: 'آدرس وب سایت لازم است'
 							}
 						}
 					}
@@ -125,21 +125,21 @@ var KTProjectsAdd = function () {
 						validators: {
 							choice: {
 								min: 1,
-								message: 'Please select at least 1 option'
+								message: "لطفا حداقل 1 گزینه را انتخاب کنید"
 							}
 						}
 					},
 					language: {
 						validators: {
 							notEmpty: {
-								message: 'Please select a language'
+								message: "لطفا یک زبان را انتخاب کنید"
 							}
 						}
 					},
 					timezone: {
 						validators: {
 							notEmpty: {
-								message: 'Please select a timezone'
+								message: "لطفا منطقه زمانی را انتخاب کنید"
 							}
 						}
 					}
@@ -159,35 +159,35 @@ var KTProjectsAdd = function () {
 					address1: {
 						validators: {
 							notEmpty: {
-								message: 'Address is required'
+								message: "آدرس لازم است"
 							}
 						}
 					},
 					postcode: {
 						validators: {
 							notEmpty: {
-								message: 'Postcode is required'
+								message: "کدپستی لازم است"
 							}
 						}
 					},
 					city: {
 						validators: {
 							notEmpty: {
-								message: 'City is required'
+								message: "شهر مورد نیاز است"
 							}
 						}
 					},
 					state: {
 						validators: {
 							notEmpty: {
-								message: 'state is required'
+								message: "استان لازم است"
 							}
 						}
 					},
 					country: {
 						validators: {
 							notEmpty: {
-								message: 'Country is required'
+								message: "کشور مورد نیاز است"
 							}
 						}
 					},

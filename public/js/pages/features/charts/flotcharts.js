@@ -491,15 +491,15 @@ var KTFlotchartsDemo = function() {
 
 		$(".stackControls input").click(function(e) {
 			e.preventDefault();
-			stack = $(this).val() == "With stacking" ? true : null;
+			stack = $(this).val() == "با استک" ? true : null;
 			plotWithOptions();
 		});
 
 		$(".graphControls input").click(function(e) {
 			e.preventDefault();
-			bars = $(this).val().indexOf("Bars") != -1;
-			lines = $(this).val().indexOf("Lines") != -1;
-			steps = $(this).val().indexOf("steps") != -1;
+			bars = $(this).val().indexOf("میله ها") != -1;
+			lines = $(this).val().indexOf("خطوط") != -1;
+			steps = $(this).val().indexOf("مراحل") != -1;
 			plotWithOptions();
 		});
 
@@ -592,10 +592,10 @@ var KTFlotchartsDemo = function() {
 
 	var demo8 = function() {
 		var data = [
-            {label: "CSS", data: 10, color:  KTApp.getSettings()['colors']['theme']['base']["primary"]},
-            {label: "HTML5", data: 40, color:  KTApp.getSettings()['colors']['theme']['base']["success"]},
-            {label: "PHP", data: 30, color:  KTApp.getSettings()['colors']['theme']['base']["danger"]},
-            {label: "Angular", data: 20, color:  KTApp.getSettings()['colors']['theme']['base']["warning"]}
+            {label: "سی اس اس", data: 10, color:  KTApp.getSettings()['colors']['theme']['base']["primary"]},
+            {label: "اچ تی ام ال", data: 40, color:  KTApp.getSettings()['colors']['theme']['base']["success"]},
+            {label: "پی اچ پی", data: 30, color:  KTApp.getSettings()['colors']['theme']['base']["danger"]},
+            {label: "انگولار", data: 20, color:  KTApp.getSettings()['colors']['theme']['base']["warning"]}
         ];
 
 		$.plot($("#kt_flotcharts_8"), data, {
@@ -609,11 +609,11 @@ var KTFlotchartsDemo = function() {
 
 	var demo9 = function() {
 		var data = [
-            {label: "USA", data: 10, color:  KTApp.getSettings()['colors']['theme']['base']["primary"]},
-            {label: "Germany", data: 25, color:  KTApp.getSettings()['colors']['theme']['base']["success"]},
-            {label: "Norway", data: 30, color:  KTApp.getSettings()['colors']['theme']['base']["danger"]},
-            {label: "Malaysia", data: 15, color:  KTApp.getSettings()['colors']['theme']['base']["warning"]},
-            {label: "France", data: 10, color:  KTApp.getSettings()['colors']['theme']['base']["info"]}
+            {label: "آمریکا", data: 10, color:  KTApp.getSettings()['colors']['theme']['base']["primary"]},
+            {label: "آلمان", data: 25, color:  KTApp.getSettings()['colors']['theme']['base']["success"]},
+            {label: "نروژ", data: 30, color:  KTApp.getSettings()['colors']['theme']['base']["danger"]},
+            {label: "ایران", data: 15, color:  KTApp.getSettings()['colors']['theme']['base']["warning"]},
+            {label: "فرانسه", data: 10, color:  KTApp.getSettings()['colors']['theme']['base']["info"]}
         ];
 
 		$.plot($("#kt_flotcharts_9"), data, {
@@ -630,11 +630,11 @@ var KTFlotchartsDemo = function() {
 
 	var demo10 = function() {
 		var data = [
-            {label: "Google", data: 20, color:  KTApp.getSettings()['colors']['theme']['base']["primary"]},
-            {label: "Twitter", data: 35, color:  KTApp.getSettings()['colors']['theme']['base']["success"]},
-            {label: "Linkedin", data: 20, color:  KTApp.getSettings()['colors']['theme']['base']["danger"]},
-            {label: "Instagram", data: 25, color:  KTApp.getSettings()['colors']['theme']['base']["warning"]},
-            {label: "Facebook", data: 10, color:  KTApp.getSettings()['colors']['theme']['base']["info"]}
+            {label: "گوگل", data: 20, color:  KTApp.getSettings()['colors']['theme']['base']["primary"]},
+            {label: "توئیتر", data: 35, color:  KTApp.getSettings()['colors']['theme']['base']["success"]},
+            {label: "لینکدین", data: 20, color:  KTApp.getSettings()['colors']['theme']['base']["danger"]},
+            {label: "اینستاگرام", data: 25, color:  KTApp.getSettings()['colors']['theme']['base']["warning"]},
+            {label: "فیس بوک", data: 10, color:  KTApp.getSettings()['colors']['theme']['base']["info"]}
         ];
 
 		$.plot($("#kt_flotcharts_10"), data, {
@@ -662,11 +662,11 @@ var KTFlotchartsDemo = function() {
 
 	var demo11 = function() {
 		var data = [
-            {label: "Vue", data: 13, color:  KTApp.getSettings()['colors']['theme']['base']["danger"]},
-            {label: "Angular", data: 25, color:  KTApp.getSettings()['colors']['theme']['base']["success"]},
-            {label: "React", data: 15, color:  KTApp.getSettings()['colors']['theme']['base']["primary"]},
-            {label: "Ember", data: 10, color:  KTApp.getSettings()['colors']['theme']['base']["warning"]},
-            {label: "Backbone", data: 8, color:  KTApp.getSettings()['colors']['theme']['base']["info"]}
+            {label: "وی یو ای", data: 13, color:  KTApp.getSettings()['colors']['theme']['base']["danger"]},
+            {label: "انگولار", data: 25, color:  KTApp.getSettings()['colors']['theme']['base']["success"]},
+            {label: "ری اکت", data: 15, color:  KTApp.getSettings()['colors']['theme']['base']["primary"]},
+            {label: "ایمبر", data: 10, color:  KTApp.getSettings()['colors']['theme']['base']["warning"]},
+            {label: "یک وان", data: 8, color:  KTApp.getSettings()['colors']['theme']['base']["info"]}
         ];
 
 		$.plot($("#kt_flotcharts_11"), data, {

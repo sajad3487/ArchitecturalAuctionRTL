@@ -29,10 +29,10 @@ var KTWizard4 = function () {
 					KTUtil.scrollTop();
 				} else {
 					Swal.fire({
-						text: "Sorry, looks like there are some errors detected, please try again.",
+						text: "با عرض پوزش ، به نظر می رسد برخی از خطاها شناسایی شده اند ، لطفا دوباره امتحان کنید.",
 						icon: "error",
 						buttonsStyling: false,
-						confirmButtonText: "Ok, got it!",
+						confirmButtonText: "باشه فهمیدم!",
 						customClass: {
 							confirmButton: "btn font-weight-bold btn-light"
 						}
@@ -59,31 +59,31 @@ var KTWizard4 = function () {
 					fname: {
 						validators: {
 							notEmpty: {
-								message: 'First name is required'
+								message: "نام لازم است"
 							}
 						}
 					},
 					lname: {
 						validators: {
 							notEmpty: {
-								message: 'Last Name is required'
+								message: "نام خانوادگی لازم است"
 							}
 						}
 					},
 					phone: {
 						validators: {
 							notEmpty: {
-								message: 'Phone is required'
+								message: "تلفن لازم است"
 							}
 						}
 					},
 					email: {
 						validators: {
 							notEmpty: {
-								message: 'Email is required'
+								message: 'ایمیل لازم است'
 							},
 							emailAddress: {
-								message: 'The value is not a valid email address'
+								message: "مقدار یک آدرس ایمیل معتبر نیست"
 							}
 						}
 					}
@@ -103,35 +103,35 @@ var KTWizard4 = function () {
 					address1: {
 						validators: {
 							notEmpty: {
-								message: 'Address is required'
+								message: "آدرس لازم است"
 							}
 						}
 					},
 					postcode: {
 						validators: {
 							notEmpty: {
-								message: 'Postcode is required'
+								message: "کدپستی لازم است"
 							}
 						}
 					},
 					city: {
 						validators: {
 							notEmpty: {
-								message: 'City is required'
+								message: "شهر مورد نیاز است"
 							}
 						}
 					},
 					state: {
 						validators: {
 							notEmpty: {
-								message: 'State is required'
+								message: "استان لازم است"
 							}
 						}
 					},
 					country: {
 						validators: {
 							notEmpty: {
-								message: 'Country is required'
+								message: "کشور مورد نیاز است"
 							}
 						}
 					}
@@ -151,41 +151,41 @@ var KTWizard4 = function () {
 					ccname: {
 						validators: {
 							notEmpty: {
-								message: 'Credit card name is required'
+								message: 'نام کارت اعتباری الزامی است'
 							}
 						}
 					},
 					ccnumber: {
 						validators: {
 							notEmpty: {
-								message: 'Credit card number is required'
+								message: "شماره کارت اعتباری لازم است"
 							},
 							creditCard: {
-								message: 'The credit card number is not valid'
+								message: "شماره کارت اعتباری معتبر نیست"
 							}
 						}
 					},
 					ccmonth: {
 						validators: {
 							notEmpty: {
-								message: 'Credit card month is required'
+								message: "ماه کارت اعتباری لازم است"
 							}
 						}
 					},
 					ccyear: {
 						validators: {
 							notEmpty: {
-								message: 'Credit card year is required'
+								message: "سال کارت اعتباری لازم است"
 							}
 						}
 					},
 					cccvv: {
 						validators: {
 							notEmpty: {
-								message: 'Credit card CVV is required'
+								message: "CVV کارت اعتباری لازم است"
 							},
 							digits: {
-								message: 'The CVV value is not valid. Only numbers is allowed'
+								message: "مقدار CVV معتبر نیست. فقط شماره مجاز است "
 							}
 						}
 					}

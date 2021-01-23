@@ -25,7 +25,7 @@ var KTUppy = function () {
 			inline: true,
 			replaceTargetContent: true,
 			showProgressDetails: true,
-			note: 'No filetype restrictions.',
+			note: 'بدون محدودیت در نوع فایل',
 			height: 470,
 			metaFields: [
 				{ id: 'name', name: 'Name', placeholder: 'file name' },
@@ -60,7 +60,7 @@ var KTUppy = function () {
 			inline: true,
 			replaceTargetContent: true,
 			showProgressDetails: true,
-			note: 'Images and video only, 2–3 files, up to 1 MB',
+			note: 'امکان اپلود تصویر و ویدیوحداکثر تا سه فایل ',
 			height: 470,
 			metaFields: [
 				{ id: 'name', name: 'Name', placeholder: 'file name' },
@@ -221,7 +221,7 @@ var KTUppy = function () {
 		});
 
 		$(id + ' .uppy-FileInput-input').addClass('uppy-input-control').attr('id', elemId + '_input_control');
-		$(id + ' .uppy-FileInput-container').append('<label class="uppy-input-label btn btn-light-primary btn-sm btn-bold" for="' + (elemId + '_input_control') + '">Attach files</label>');
+		$(id + ' .uppy-FileInput-container').append('<label class="uppy-input-label btn btn-light-primary btn-sm btn-bold" for="' + (elemId + '_input_control') + '">ضمیمه کردن فایل</label>');
 
 		var $fileLabel = $(id + ' .uppy-input-label');
 
@@ -270,7 +270,7 @@ var KTUppy = function () {
 			inline: false,
 			replaceTargetContent: true,
 			showProgressDetails: true,
-			note: 'No filetype restrictions.',
+			note: 'بدون محدودیت در نوع فایل',
 			height: 470,
 			metaFields: [
 				{ id: 'name', name: 'Name', placeholder: 'file name' },
@@ -309,12 +309,12 @@ var KTUppy = function () {
 
 			setTimeout(function() {
 				swal.fire({
-					"title": "Notice",
-					"html": "Uppy demos uses <b>https://master.tus.io/files/</b> URL for resumable upload examples and your uploaded files will be temporarely stored in <b>tus.io</b> servers.",
+					"title": "توجه",
+					"html": "نسخه های نمایشی Uppy از آدرس های <b> https://master.tus.io/files/ </b> از URL برای نمونه بارگیری مجدد استفاده می کند و پرونده های بارگذاری شده شما به طور موقت در سرورهای <b> tus.io </b> ذخیره می شوند.",
 					"type": "info",
 					"buttonsStyling": false,
 					"confirmButtonClass": "btn btn-primary",
-					"confirmButtonText": "Ok, I understand",
+					"confirmButtonText": "باش ، فهمیدم",
 					"onClose": function(e) {
 						console.log('on close event fired!');
 					}

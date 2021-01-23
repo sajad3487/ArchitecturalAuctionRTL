@@ -42,7 +42,7 @@ var KTBlockUIDemo = function () {
             KTApp.block('#kt_blockui_content', {
                 overlayColor: '#000000',
                 state: 'danger',
-                message: 'Please wait...'
+                message: 'لطفا صبر کنید...'
             });
 
             setTimeout(function() {
@@ -54,7 +54,7 @@ var KTBlockUIDemo = function () {
             KTApp.block('#kt_blockui_content', {
                 overlayColor: '#000000',
                 state: 'primary',
-                message: 'Processing...'
+                message: 'در حال پردازش...'
             });
 
             setTimeout(function() {
@@ -102,7 +102,7 @@ var KTBlockUIDemo = function () {
             KTApp.block('#kt_blockui_modal_custom_text_1 .modal-content', {
                 overlayColor: '#000000',
                 state: 'danger',
-                message: 'Please wait...'
+                message: 'لطفا صبر کنید...'
             });
 
             setTimeout(function() {
@@ -114,7 +114,7 @@ var KTBlockUIDemo = function () {
             KTApp.block('#kt_blockui_modal_custom_text_2 .modal-content', {
                 overlayColor: '#000000',
                 state: 'primary',
-                message: 'Processing...'
+                message: 'در حال پردازش...'
             });
 
             setTimeout(function() {
@@ -162,7 +162,7 @@ var KTBlockUIDemo = function () {
             KTApp.block('#kt_blockui_card', {
                 overlayColor: '#000000',
                 state: 'danger',
-                message: 'Please wait...'
+                message: 'لطفا صبر کنید...'
             });
 
             setTimeout(function() {
@@ -174,7 +174,7 @@ var KTBlockUIDemo = function () {
             KTApp.block('#kt_blockui_card', {
                 overlayColor: '#000000',
                 state: 'primary',
-                message: 'Processing...'
+                message: 'در حال پردازش...'
             });
 
             setTimeout(function() {
@@ -221,7 +221,7 @@ var KTBlockUIDemo = function () {
             KTApp.blockPage({
                 overlayColor: '#000000',
                 state: 'danger',
-                message: 'Please wait...'
+                message: 'لطفا صبر کنید...'
             });
 
             setTimeout(function() {
@@ -233,7 +233,7 @@ var KTBlockUIDemo = function () {
             KTApp.blockPage({
                 overlayColor: '#000000',
                 state: 'primary',
-                message: 'Processing...'
+                message: 'در حال پردازش...'
             });
 
             setTimeout(function() {

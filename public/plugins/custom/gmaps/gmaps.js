@@ -1509,10 +1509,10 @@ GMaps.prototype.getRoutes = function(options) {
 
   var self = this,
       routes = [],
-      service = new google.maps.DirectionsService();
+      service = new google.maps.مستقیمionsService();
 
   service.route(request_options, function(result, status) {
-    if (status === google.maps.DirectionsStatus.OK) {
+    if (status === google.maps.مستقیمionsStatus.OK) {
       for (var r in result.routes) {
         if (result.routes.hasOwnProperty(r)) {
           routes.push(result.routes[r]);
@@ -1589,7 +1589,7 @@ GMaps.prototype.renderRoute = function(options, renderOptions) {
   renderOptions = extend_object({
     map: this.map
   }, renderOptions);
-  display = new google.maps.DirectionsRenderer(renderOptions);
+  display = new google.maps.مستقیمionsRenderer(renderOptions);
 
   this.getRoutes({
     origin: options.origin,
@@ -1602,8 +1602,8 @@ GMaps.prototype.renderRoute = function(options, renderOptions) {
     avoidTolls: options.avoidTolls,
     optimizeWaypoints: options.optimizeWaypoints,
     callback: function(routes, response, status) {
-      if (status === google.maps.DirectionsStatus.OK) {
-        display.setDirections(response);
+      if (status === google.maps.مستقیمionsStatus.OK) {
+        display.setمستقیمions(response);
       }
     }
   });

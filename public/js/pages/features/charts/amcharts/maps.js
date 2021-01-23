@@ -69,7 +69,7 @@ var KTamChartsMapsDemo = function() {
                     "alpha": 0.1,
                     "animateAlongLine": true,
                     "lineId": "line2",
-                    "flipDirection": true,
+                    "flipمستقیمion": true,
                     "loop": true,
                     "scale": 0.03,
                     "positionScale": 1.3
@@ -79,7 +79,7 @@ var KTamChartsMapsDemo = function() {
                     "color": "#585869",
                     "animateAlongLine": true,
                     "lineId": "line1",
-                    "flipDirection": true,
+                    "flipمستقیمion": true,
                     "loop": true,
                     "scale": 0.03,
                     "positionScale": 1.8

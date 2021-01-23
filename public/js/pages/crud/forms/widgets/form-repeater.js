@@ -5,18 +5,18 @@ var KTFormRepeater = function() {
     var demo1 = function() {
         $('#kt_repeater_1').repeater({
             initEmpty: false,
-
+           
             defaultValues: {
                 'text-input': 'foo'
             },
-
+             
             show: function () {
                 $(this).slideDown();
             },
 
-            hide: function (deleteElement) {
-                $(this).slideUp(deleteElement);
-            }
+            hide: function (deleteElement) {                
+                $(this).slideUp(deleteElement);                 
+            }   
         });
     }
 
@@ -27,16 +27,16 @@ var KTFormRepeater = function() {
             defaultValues: {
                 'text-input': 'foo'
             },
-
+             
             show: function() {
-                $(this).slideDown();
+                $(this).slideDown();                               
             },
 
-            hide: function(deleteElement) {
-                if(confirm('Are you sure you want to delete this element?')) {
+            hide: function(deleteElement) {                 
+                if(confirm("آیا مطمئن هستید که می خواهید این عنصر را حذف کنید؟")) {
                     $(this).slideUp(deleteElement);
-                }
-            }
+                }                                
+            }      
         });
     }
 
@@ -48,70 +48,70 @@ var KTFormRepeater = function() {
             defaultValues: {
                 'text-input': 'foo'
             },
-
+             
             show: function() {
-                $(this).slideDown();
+                $(this).slideDown();                               
             },
 
-            hide: function(deleteElement) {
-                if(confirm('Are you sure you want to delete this element?')) {
+            hide: function(deleteElement) {                 
+                if(confirm("آیا مطمئن هستید که می خواهید این عنصر را حذف کنید؟")) {
                     $(this).slideUp(deleteElement);
-                }
-            }
+                }                                  
+            }      
         });
     }
 
     var demo4 = function() {
         $('#kt_repeater_4').repeater({
             initEmpty: false,
-
+           
             defaultValues: {
                 'text-input': 'foo'
             },
-
+             
             show: function() {
-                $(this).slideDown();
+                $(this).slideDown();                               
             },
 
-            hide: function(deleteElement) {
-                $(this).slideUp(deleteElement);
-            }
+            hide: function(deleteElement) {              
+                $(this).slideUp(deleteElement);                                               
+            }      
         });
     }
 
     var demo5 = function() {
         $('#kt_repeater_5').repeater({
             initEmpty: false,
-
+           
             defaultValues: {
                 'text-input': 'foo'
             },
-
+             
             show: function() {
-                $(this).slideDown();
+                $(this).slideDown();                               
             },
 
-            hide: function(deleteElement) {
-                $(this).slideUp(deleteElement);
-            }
+            hide: function(deleteElement) {              
+                $(this).slideUp(deleteElement);                                               
+            }      
         });
     }
 
     var demo6 = function() {
         $('#kt_repeater_6').repeater({
             initEmpty: false,
-
+           
             defaultValues: {
                 'text-input': 'foo'
             },
-
+             
             show: function() {
-                $(this).slideDown();
+                $(this).slideDown();                               
             },
 
-            hide: function(deleteElement) {
-                $(this).slideUp(deleteElement);
-            }
+            hide: function(deleteElement) {                  
+                $(this).slideUp(deleteElement);                                                
+            }      
         });
     }
     return {
@@ -131,3 +131,4 @@ jQuery(document).ready(function() {
     KTFormRepeater.init();
 });
 
+    

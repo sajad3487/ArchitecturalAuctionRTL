@@ -52,7 +52,6 @@ var KTLayoutBuilder = function() {
 						method: 'POST',
 						data: {
 							builder_export: 1,
-							demo: demo,
 							builder_check: result.id,
 						},
 					}).done(function(r) {
@@ -62,7 +61,7 @@ var KTLayoutBuilder = function() {
 						if (result.export_status !== 1) return;
 
 						$('<iframe/>').attr({
-							src: formAction + '?builder_export&builder_download&id=' + result.id + '&demo=' + demo,
+							src: formAction + '?builder_export&builder_download&id=' + result.id,
 							style: 'visibility:hidden;display:none',
 						}).ready(function() {
 							toastr.success('Export HTML Version Layout', 'HTML version exported.');
@@ -138,7 +137,7 @@ var KTLayoutBuilder = function() {
 
 	var verify = {
 		reCaptchaVerified: function() {
-			return $.ajax('/metronic/theme/html/tools/builder/recaptcha.php?recaptcha', {
+			return $.ajax('../tools/builder/recaptcha.php?recaptcha', {
 				method: 'POST',
 				data: {
 					response: $('#g-recaptcha-response').val(),

@@ -37,6 +37,7 @@ Route::group(['middleware'=>'auth'],function (){
             Route::get('/','HomeController@owner_profile');
             Route::post('/update','HomeController@updateProfile');
         });
+
     });
 });
 

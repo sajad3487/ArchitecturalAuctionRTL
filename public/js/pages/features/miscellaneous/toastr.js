@@ -13,11 +13,11 @@ var KTToastrDemo = function() {
 
         var getMessage = function () {
             var msgs = [
-                'New order has been placed!',
-                'Are you the six fingered man?',
-                'Inconceivable!',
-                'I do not think that means what you think it means.',
-                'Have fun storming the castle!'
+                'یک سفارش جدید دارید.',
+                'آیا مطمئن هستید؟',
+                'چگونه ممکن هست!',
+                'با کمی تامل و فکر می توانید این مشکل را حل کنید!',
+                'از تفریح در قلعه لذت ببرید!'
             ];
             i++;
             if (i === msgs.length) {
@@ -28,8 +28,8 @@ var KTToastrDemo = function() {
         };
 
         var getMessageWithClearButton = function (msg) {
-            msg = msg ? msg : 'Clear itself?';
-            msg += '<br /><br /><button type="button" class="btn btn-outline-light btn-sm--air--wide clear">Yes</button>';
+            msg = msg ? msg : 'حذف خودش؟';
+            msg += '<br /><br /><button type="button" class="btn btn-outline-light btn-sm--air--wide clear">بله</button>';
             return msg;
         };
 
@@ -60,7 +60,7 @@ var KTToastrDemo = function() {
 
             if ($('#addBehaviorOnToastClick').prop('checked')) {
                 toastr.options.onclick = function () {
-                    alert('You can perform some custom action after a toast goes away');
+                    alert('بعد از حذف توئستر می توانید یک سری عملیات های سفارش را اجرا کنید');
                 };
             }
 
@@ -125,13 +125,13 @@ var KTToastrDemo = function() {
 
             if ($toast.find('#okBtn').length) {
                 $toast.delegate('#okBtn', 'click', function () {
-                    alert('you clicked me. i was toast #' + toastIndex + '. goodbye!');
+                    alert('کلیک کنید روی توئستر #' + toastIndex + '. خداحافظ');
                     $toast.remove();
                 });
             }
             if ($toast.find('#surpriseBtn').length) {
                 $toast.delegate('#surpriseBtn', 'click', function () {
-                    alert('Surprise! you clicked me. i was toast #' + toastIndex + '. You could perform an action here.');
+                    alert('سوپرایز! با کلیک کردن #' + toastIndex + '. می توانید کلیک کنید و مشاهده کنید عملیات را.');
                 });
             }
             if ($toast.find('.clear').length) {

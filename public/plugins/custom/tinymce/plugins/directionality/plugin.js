@@ -29,10 +29,10 @@
     };
 
     var register = function (editor) {
-      editor.addCommand('mceDirectionLTR', function () {
+      editor.addCommand('mceمستقیمionLTR', function () {
         setDir(editor, 'ltr');
       });
-      editor.addCommand('mceDirectionRTL', function () {
+      editor.addCommand('mceمستقیمionRTL', function () {
         setDir(editor, 'rtl');
       });
     };
@@ -267,7 +267,7 @@
       return isSupported(dom) ? dom.style.getPropertyValue(property) : '';
     };
 
-    var getDirection = function (element) {
+    var getمستقیمion = function (element) {
       return get(element, 'direction') === 'rtl' ? 'rtl' : 'ltr';
     };
 
@@ -275,7 +275,7 @@
       return function (api) {
         var nodeChangeHandler = function (e) {
           var element = Element.fromDom(e.element);
-          api.setActive(getDirection(element) === dir);
+          api.setActive(getمستقیمion(element) === dir);
         };
         editor.on('NodeChange', nodeChangeHandler);
         return function () {
@@ -288,7 +288,7 @@
         tooltip: 'Left to right',
         icon: 'ltr',
         onAction: function () {
-          return editor.execCommand('mceDirectionLTR');
+          return editor.execCommand('mceمستقیمionLTR');
         },
         onSetup: getNodeChangeHandler(editor, 'ltr')
       });
@@ -296,7 +296,7 @@
         tooltip: 'Right to left',
         icon: 'rtl',
         onAction: function () {
-          return editor.execCommand('mceDirectionRTL');
+          return editor.execCommand('mceمستقیمionRTL');
         },
         onSetup: getNodeChangeHandler(editor, 'rtl')
       });

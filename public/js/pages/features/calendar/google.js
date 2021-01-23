@@ -23,9 +23,9 @@ var KTCalendarGoogle = function() {
                 aspectRatio: 3,  // see: https://fullcalendar.io/docs/aspectRatio
 
                 views: {
-                    dayGridMonth: { buttonText: 'month' },
-                    timeGridWeek: { buttonText: 'week' },
-                    timeGridDay: { buttonText: 'day' }
+                    dayGridMonth: { buttonText: 'ماه' },
+                    timeGridWeek: { buttonText: 'هفته' },
+                    timeGridDay: { buttonText: 'روز' }
                 },
 
                 defaultView: 'dayGridMonth',
@@ -55,7 +55,7 @@ var KTCalendarGoogle = function() {
                     KTApp.block(portlet.getSelf(), {
                         type: 'loader',
                         state: 'success',
-                        message: 'Please wait...'
+                        message: 'لطفا صبر کنید...'
                     });
                     */
                 },

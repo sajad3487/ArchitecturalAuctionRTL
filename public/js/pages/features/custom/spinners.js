@@ -11,7 +11,7 @@ var KTSpinnersDemo = function () {
         var btn = KTUtil.getById("kt_btn_1");
 
         KTUtil.addEvent(btn, "click", function() {
-            KTUtil.btnWait(btn, "spinner spinner-right spinner-white pr-15", "Please wait");
+            KTUtil.btnWait(btn, "spinner spinner-right spinner-white pr-15", "لطفا صبر کنید");
 
             setTimeout(function() {
                 KTUtil.btnRelease(btn);
@@ -50,7 +50,7 @@ var KTSpinnersDemo = function () {
         var btn = KTUtil.getById("kt_btn_4");
 
         KTUtil.addEvent(btn, "click", function() {
-            KTUtil.btnWait(btn, "spinner spinner-left spinner-darker-danger pl-15", "Please wait");
+            KTUtil.btnWait(btn, "spinner spinner-left spinner-darker-danger pl-15", "لطفا صبر کنید");
 
             setTimeout(function() {
                 KTUtil.btnRelease(btn);

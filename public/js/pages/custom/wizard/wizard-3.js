@@ -29,10 +29,10 @@ var KTWizard3 = function () {
 					KTUtil.scrollTop();
 				} else {
 					Swal.fire({
-						text: "Sorry, looks like there are some errors detected, please try again.",
+						text: "با عرض پوزش ، به نظر می رسد برخی از خطاها شناسایی شده اند ، لطفا دوباره امتحان کنید.",
 						icon: "error",
 						buttonsStyling: false,
-						confirmButtonText: "Ok, got it!",
+						confirmButtonText: "باشه فهمیدم!",
 						customClass: {
 							confirmButton: "btn font-weight-bold btn-light"
 						}
@@ -59,35 +59,35 @@ var KTWizard3 = function () {
 					address1: {
 						validators: {
 							notEmpty: {
-								message: 'Address is required'
+								message: "آدرس لازم است"
 							}
 						}
 					},
 					postcode: {
 						validators: {
 							notEmpty: {
-								message: 'Postcode is required'
+								message: "کدپستی لازم است"
 							}
 						}
 					},
 					city: {
 						validators: {
 							notEmpty: {
-								message: 'City is required'
+								message: "شهر مورد نیاز است"
 							}
 						}
 					},
 					state: {
 						validators: {
 							notEmpty: {
-								message: 'State is required'
+								message: "استان لازم است"
 							}
 						}
 					},
 					country: {
 						validators: {
 							notEmpty: {
-								message: 'Country is required'
+								message: "کشور مورد نیاز است"
 							}
 						}
 					}
@@ -167,21 +167,21 @@ var KTWizard3 = function () {
 					delivery: {
 						validators: {
 							notEmpty: {
-								message: 'Delivery type is required'
+								message: "نوع تحویل الزامی است"
 							}
 						}
 					},
 					packaging: {
 						validators: {
 							notEmpty: {
-								message: 'Packaging type is required'
+								message: 'نوع بسته بندی لازم است'
 							}
 						}
 					},
 					preferreddelivery: {
 						validators: {
 							notEmpty: {
-								message: 'Preferred delivery window is required'
+								message: "نحوه ی تحویل لازم است"
 							}
 						}
 					}
@@ -201,35 +201,35 @@ var KTWizard3 = function () {
 					locaddress1: {
 						validators: {
 							notEmpty: {
-								message: 'Address is required'
+								message: "آدرس لازم است"
 							}
 						}
 					},
 					locpostcode: {
 						validators: {
 							notEmpty: {
-								message: 'Postcode is required'
+								message: "کدپستی لازم است"
 							}
 						}
 					},
 					loccity: {
 						validators: {
 							notEmpty: {
-								message: 'City is required'
+								message: "شهر مورد نیاز است"
 							}
 						}
 					},
 					locstate: {
 						validators: {
 							notEmpty: {
-								message: 'State is required'
+								message: "استان لازم است"
 							}
 						}
 					},
 					loccountry: {
 						validators: {
 							notEmpty: {
-								message: 'Country is required'
+								message: "کشور مورد نیاز است"
 							}
 						}
 					}

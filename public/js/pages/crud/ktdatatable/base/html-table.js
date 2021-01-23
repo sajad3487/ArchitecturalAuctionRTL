@@ -26,37 +26,37 @@ var KTDatatableHtmlTableDemo = function() {
 					format: 'YYYY-MM-DD',
 				}, {
 					field: 'Status',
-					title: 'Status',
+					title: 'وضعیت',
 					autoHide: false,
 					// callback function support for column rendering
 					template: function(row) {
 						var status = {
 							1: {
-                                'title': 'Pending',
+                                'title': 'در حال انجام',
                                 'class': ' label-light-warning'
                             },
 							2: {
-                                'title': 'Delivered',
+                                'title': 'تحویل داده شده',
                                 'class': ' label-light-danger'
                             },
 							3: {
-                                'title': 'Canceled',
+                                'title': 'لغو شده',
                                 'class': ' label-light-primary'
                             },
 							4: {
-                                'title': 'Success',
+                                'title': 'موفق',
                                 'class': ' label-light-success'
                             },
 							5: {
-                                'title': 'Info',
+                                'title': 'اطلاعات',
                                 'class': ' label-light-info'
                             },
 							6: {
-                                'title': 'Danger',
+                                'title': 'خطار',
                                 'class': ' label-light-danger'
                             },
 							7: {
-                                'title': 'Warning',
+                                'title': 'هشدار',
                                 'class': ' label-light-warning'
                             }
 						};
@@ -64,21 +64,21 @@ var KTDatatableHtmlTableDemo = function() {
 					},
 				}, {
 					field: 'Type',
-					title: 'Type',
+					title: 'نوع',
 					autoHide: false,
 					// callback function support for column rendering
 					template: function(row) {
 						var status = {
 							1: {
-                                'title': 'Online',
+                                'title': 'برخط',
                                 'state': 'danger'
                             },
 							2: {
-                                'title': 'Retail',
+                                'title': 'خرده فروشی',
                                 'state': 'primary'
                             },
 							3: {
-                                'title': 'Direct',
+                                'title': 'مستقیم',
                                 'state': 'success'
                             },
 						};

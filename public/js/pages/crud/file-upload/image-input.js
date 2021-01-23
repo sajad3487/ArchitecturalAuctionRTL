@@ -18,30 +18,30 @@ var KTImageInputDemo = function () {
 
 		avatar4.on('cancel', function(imageInput) {
 			swal.fire({
-                title: 'Image successfully canceled !',
+                title: 'تصویر با موفقیت لغو شد.',
                 type: 'success',
                 buttonsStyling: false,
-                confirmButtonText: 'Awesome!',
+                confirmButtonText: 'عالی!',
                 confirmButtonClass: 'btn btn-primary font-weight-bold'
             });
 		});
 
 		avatar4.on('change', function(imageInput) {
 			swal.fire({
-                title: 'Image successfully changed !',
+                title: 'تصویر با موفقیت تغییر کرد',
                 type: 'success',
                 buttonsStyling: false,
-                confirmButtonText: 'Awesome!',
+                confirmButtonText: 'عالی!',
                 confirmButtonClass: 'btn btn-primary font-weight-bold'
             });
 		});
 
 		avatar4.on('remove', function(imageInput) {
 			swal.fire({
-                title: 'Image successfully removed !',
+                title: 'تصویر با موفقیت حذف شد.',
                 type: 'error',
                 buttonsStyling: false,
-                confirmButtonText: 'Got it!',
+                confirmButtonText: 'فهمیدم!',
                 confirmButtonClass: 'btn btn-primary font-weight-bold'
             });
 		});
@@ -51,30 +51,30 @@ var KTImageInputDemo = function () {
 
 		avatar5.on('cancel', function(imageInput) {
 			swal.fire({
-                title: 'Image successfully changed !',
+                title: 'تصویر با موفقیت تغییر کرد',
                 type: 'success',
                 buttonsStyling: false,
-                confirmButtonText: 'Awesome!',
+                confirmButtonText: 'عالی!',
                 confirmButtonClass: 'btn btn-primary font-weight-bold'
             });
 		});
 
 		avatar5.on('change', function(imageInput) {
 			swal.fire({
-                title: 'Image successfully changed !',
+                title: 'تصویر با موفقیت تغییر کرد',
                 type: 'success',
                 buttonsStyling: false,
-                confirmButtonText: 'Awesome!',
+                confirmButtonText: 'عالی!',
                 confirmButtonClass: 'btn btn-primary font-weight-bold'
             });
 		});
 
 		avatar5.on('remove', function(imageInput) {
 			swal.fire({
-                title: 'Image successfully removed !',
+                title: 'تصویر با موفقیت حذف شد.',
                 type: 'error',
                 buttonsStyling: false,
-                confirmButtonText: 'Got it!',
+                confirmButtonText: 'فهمیدم!',
                 confirmButtonClass: 'btn btn-primary font-weight-bold'
             });
 		});

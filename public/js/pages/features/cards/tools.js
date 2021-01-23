@@ -14,44 +14,44 @@ var KTCardTools = function () {
         // Toggle event handlers
         card.on('beforeCollapse', function(card) {
             setTimeout(function() {
-                toastr.info('Before collapse event fired!');
+                toastr.info('قبل از حادثه سقوط اخراج شد!');
             }, 100);
         });
 
         card.on('afterCollapse', function(card) {
             setTimeout(function() {
-                toastr.warning('Before collapse event fired!');
+                toastr.warning('قبل از حادثه سقوط اخراج شد!');
             }, 2000);
         });
 
         card.on('beforeExpand', function(card) {
             setTimeout(function() {
-                toastr.info('Before expand event fired!');
+                toastr.info('قبل از گسترش رویداد اخراج شد!');
             }, 100);
         });
 
         card.on('afterExpand', function(card) {
             setTimeout(function() {
-                toastr.warning('After expand event fired!');
+                toastr.warning('پس از گسترش رویداد اخراج شد!');
             }, 2000);
         });
 
         // Remove event handlers
         card.on('beforeRemove', function(card) {
-            toastr.info('Before remove event fired!');
+            toastr.info('قبل از حذف رویداد اخراج!');
 
-            return confirm('Are you sure to remove this card ?');  // remove card after user confirmation
+            return confirm('مطمئن هستید که این کارت را حذف می کنید؟');  // remove card after user confirmation
         });
 
         card.on('afterRemove', function(card) {
             setTimeout(function() {
-                toastr.warning('After remove event fired!');
+                toastr.warning('پس از حذف رویداد اخراج شد!');
             }, 2000);
         });
 
         // Reload event handlers
         card.on('reload', function(card) {
-            toastr.info('Leload event fired!');
+            toastr.info('رویداد لندو اخراج شد!');
 
             KTApp.block(card.getSelf(), {
                 overlayColor: '#ffffff',
@@ -77,44 +77,44 @@ var KTCardTools = function () {
         // Toggle event handlers
         card.on('beforeCollapse', function(card) {
             setTimeout(function() {
-                toastr.info('Before collapse event fired!');
+                toastr.info('قبل از حادثه سقوط اخراج شد!');
             }, 100);
         });
 
         card.on('afterCollapse', function(card) {
             setTimeout(function() {
-                toastr.warning('Before collapse event fired!');
+                toastr.warning('قبل از حادثه سقوط اخراج شد!');
             }, 2000);
         });
 
         card.on('beforeExpand', function(card) {
             setTimeout(function() {
-                toastr.info('Before expand event fired!');
+                toastr.info('قبل از گسترش رویداد اخراج شد!');
             }, 100);
         });
 
         card.on('afterExpand', function(card) {
             setTimeout(function() {
-                toastr.warning('After expand event fired!');
+                toastr.warning('پس از گسترش رویداد اخراج شد!');
             }, 2000);
         });
 
         // Remove event handlers
         card.on('beforeRemove', function(card) {
-            toastr.info('Before remove event fired!');
+            toastr.info('قبل از حذف رویداد اخراج!');
 
-            return confirm('Are you sure to remove this card ?');  // remove card after user confirmation
+            return confirm('مطمئن هستید که این کارت را حذف می کنید؟');  // remove card after user confirmation
         });
 
         card.on('afterRemove', function(card) {
             setTimeout(function() {
-                toastr.warning('After remove event fired!');
+                toastr.warning('پس از حذف رویداد اخراج شد!');
             }, 2000);
         });
 
         // Reload event handlers
         card.on('reload', function(card) {
-            toastr.info('Leload event fired!');
+            toastr.info('رویداد لندو اخراج شد!');
 
             KTApp.block(card.getSelf(), {
                 overlayColor: '#000000',
@@ -140,49 +140,49 @@ var KTCardTools = function () {
         // Toggle event handlers
         card.on('beforeCollapse', function(card) {
             setTimeout(function() {
-                toastr.info('Before collapse event fired!');
+                toastr.info('قبل از حادثه سقوط اخراج شد!');
             }, 100);
         });
 
         card.on('afterCollapse', function(card) {
             setTimeout(function() {
-                toastr.warning('Before collapse event fired!');
+                toastr.warning('قبل از حادثه سقوط اخراج شد!');
             }, 2000);
         });
 
         card.on('beforeExpand', function(card) {
             setTimeout(function() {
-                toastr.info('Before expand event fired!');
+                toastr.info('قبل از گسترش رویداد اخراج شد!');
             }, 100);
         });
 
         card.on('afterExpand', function(card) {
             setTimeout(function() {
-                toastr.warning('After expand event fired!');
+                toastr.warning('پس از گسترش رویداد اخراج شد!');
             }, 2000);
         });
 
         // Remove event handlers
         card.on('beforeRemove', function(card) {
-            toastr.info('Before remove event fired!');
+            toastr.info('قبل از حذف رویداد اخراج!');
 
-            return confirm('Are you sure to remove this card ?');  // remove card after user confirmation
+            return confirm('مطمئن هستید که این کارت را حذف می کنید؟');  // remove card after user confirmation
         });
 
         card.on('afterRemove', function(card) {
             setTimeout(function() {
-                toastr.warning('After remove event fired!');
+                toastr.warning('پس از حذف رویداد اخراج شد!');
             }, 2000);
         });
 
         // Reload event handlers
         card.on('reload', function(card) {
-            toastr.info('Leload event fired!');
+            toastr.info('رویداد لندو اخراج شد!');
 
             KTApp.block(card.getSelf(), {
                 type: 'loader',
                 state: 'success',
-                message: 'Please wait...'
+                message: 'لطفا صبر کنید...'
             });
 
             // update the content here
@@ -226,49 +226,49 @@ var KTCardTools = function () {
         // Toggle event handlers
         card.on('beforeCollapse', function(card) {
             setTimeout(function() {
-                toastr.info('Before collapse event fired!');
+                toastr.info('قبل از حادثه سقوط اخراج شد!');
             }, 100);
         });
 
         card.on('afterCollapse', function(card) {
             setTimeout(function() {
-                toastr.warning('Before collapse event fired!');
+                toastr.warning('قبل از حادثه سقوط اخراج شد!');
             }, 2000);
         });
 
         card.on('beforeExpand', function(card) {
             setTimeout(function() {
-                toastr.info('Before expand event fired!');
+                toastr.info('قبل از گسترش رویداد اخراج شد!');
             }, 100);
         });
 
         card.on('afterExpand', function(card) {
             setTimeout(function() {
-                toastr.warning('After expand event fired!');
+                toastr.warning('پس از گسترش رویداد اخراج شد!');
             }, 2000);
         });
 
         // Remove event handlers
         card.on('beforeRemove', function(card) {
-            toastr.info('Before remove event fired!');
+            toastr.info('قبل از حذف رویداد اخراج!');
 
-            return confirm('Are you sure to remove this card ?');  // remove card after user confirmation
+            return confirm('مطمئن هستید که این کارت را حذف می کنید؟');  // remove card after user confirmation
         });
 
         card.on('afterRemove', function(card) {
             setTimeout(function() {
-                toastr.warning('After remove event fired!');
+                toastr.warning('پس از حذف رویداد اخراج شد!');
             }, 2000);
         });
 
         // Reload event handlers
         card.on('reload', function(card) {
-            toastr.info('Leload event fired!');
+            toastr.info('رویداد لندو اخراج شد!');
 
             KTApp.block(card.getSelf(), {
                 type: 'loader',
                 state: 'primary',
-                message: 'Please wait...'
+                message: 'لطفا صبر کنید...'
             });
 
             // update the content here

@@ -48,62 +48,62 @@ var KTDefaultDatatableDemo = function () {
 					textAlign: 'center',
 				}, {
 					field: 'OrderID',
-					title: 'Order ID',
+					title: 'آیدی',
 				}, {
 					field: 'Country',
-					title: 'Country',
+					title: 'کشور',
 					template: function(row) {
 						return row.Country + ' ' + row.ShipCountry;
 					},
 				}, {
 					field: 'CompanyEmail',
 					width: 150,
-					title: 'Email',
+					title: 'ایمیل',
 				}, {
 					field: 'ShipAddress',
-					title: 'Ship Address',
+					title: 'آدرس',
 				}, {
 					field: 'ShipDate',
-					title: 'Ship Date',
+					title: 'تاریخ',
 					type: 'date',
 					format: 'MM/DD/YYYY',
 				}, {
 					field: 'CompanyName',
-					title: 'Company Name',
+					title: 'نام شرکت',
 				}, {
 					field: 'Status',
-					title: 'Status',
+					title: 'وضعیت',
 					// callback function support for column rendering
 					template: function(row) {
 						var status = {
-							1: {'title': 'Pending', 'class': 'label-light-primary'},
-							2: {'title': 'Delivered', 'class': ' label-light-danger'},
-							3: {'title': 'Canceled', 'class': ' label-light-primary'},
-							4: {'title': 'Success', 'class': ' label-light-success'},
-							5: {'title': 'Info', 'class': ' label-light-info'},
-							6: {'title': 'Danger', 'class': ' label-light-danger'},
-							7: {'title': 'Warning', 'class': ' label-light-warning'},
+							1: {'title': 'در حال انجام', 'class': 'label-light-primary'},
+							2: {'title': 'تحویل داده شده', 'class': ' label-light-danger'},
+							3: {'title': 'لغو شده', 'class': ' label-light-primary'},
+							4: {'title': 'موفق', 'class': ' label-light-success'},
+							5: {'title': 'اطلاعات', 'class': ' label-light-info'},
+							6: {'title': 'خطار', 'class': ' label-light-danger'},
+							7: {'title': 'هشدار', 'class': ' label-light-warning'},
 						};
 
 						return '<span class="label label-lg font-weight-bold' + status[row.Status].class + ' label-inline">' + status[row.Status].title + '</span>';
 					},
 				}, {
 					field: 'Type',
-					title: 'Type',
+					title: 'نوع',
 					autoHide: false,
 					// callback function support for column rendering
 					template: function(row) {
 						var status = {
-							1: {'title': 'Online', 'state': 'danger'},
-							2: {'title': 'Retail', 'state': 'primary'},
-							3: {'title': 'Direct', 'state': 'success'},
+							1: {'title': 'برخط', 'state': 'danger'},
+							2: {'title': 'خرده فروشی', 'state': 'primary'},
+							3: {'title': 'مستقیم', 'state': 'success'},
 						};
 						return '<span class="label label-' + status[row.Type].state + ' label-dot mr-2"></span><span class="font-weight-bold text-' + status[row.Type].state + '">' +
 								status[row.Type].title + '</span>';
 					},
 				}, {
 					field: 'Actions',
-					title: 'Actions',
+					title: 'عملیات',
 					sortable: false,
 					width: 110,
 					overflow: 'visible',

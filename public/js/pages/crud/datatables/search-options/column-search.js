@@ -94,31 +94,31 @@ var KTDatatablesSearchOptionsColumnSearch = function() {
                         case 'Status':
                             var status = {
                                 1: {
-                                    'title': 'Pending',
+                                    'title': 'در حال انجام',
                                     'class': 'label-light-primary'
                                 },
                                 2: {
-                                    'title': 'Delivered',
+                                    'title': 'تحویل داده شده',
                                     'class': ' label-light-danger'
                                 },
                                 3: {
-                                    'title': 'Canceled',
+                                    'title': 'لغو شده',
                                     'class': ' label-light-primary'
                                 },
                                 4: {
-                                    'title': 'Success',
+                                    'title': 'موفق',
                                     'class': ' label-light-success'
                                 },
                                 5: {
-                                    'title': 'Info',
+                                    'title': 'اطلاعات',
                                     'class': ' label-light-info'
                                 },
                                 6: {
-                                    'title': 'Danger',
+                                    'title': 'خطار',
                                     'class': ' label-light-danger'
                                 },
                                 7: {
-                                    'title': 'Warning',
+                                    'title': 'هشدار',
                                     'class': ' label-light-warning'
                                 },
                             };
@@ -132,15 +132,15 @@ var KTDatatablesSearchOptionsColumnSearch = function() {
                         case 'Type':
                             var status = {
                                 1: {
-                                    'title': 'Online',
+                                    'title': 'برخط',
                                     'state': 'danger'
                                 },
                                 2: {
-                                    'title': 'Retail',
+                                    'title': 'خرده فروشی',
                                     'state': 'primary'
                                 },
                                 3: {
-                                    'title': 'Direct',
+                                    'title': 'مستقیم',
                                     'state': 'success'
                                 },
                             };
@@ -243,7 +243,7 @@ var KTDatatablesSearchOptionsColumnSearch = function() {
             },
             columnDefs: [{
                     targets: -1,
-                    title: 'Actions',
+                    title: 'عملیات',
                     orderable: false,
                     render: function(data, type, full, meta) {
                         return '\
@@ -277,31 +277,31 @@ var KTDatatablesSearchOptionsColumnSearch = function() {
                     render: function(data, type, full, meta) {
                         var status = {
                             1: {
-                                'title': 'Pending',
+                                'title': 'در حال انجام',
                                 'class': 'label-light-primary'
                             },
                             2: {
-                                'title': 'Delivered',
+                                'title': 'تحویل داده شده',
                                 'class': ' label-light-danger'
                             },
                             3: {
-                                'title': 'Canceled',
+                                'title': 'لغو شده',
                                 'class': ' label-light-primary'
                             },
                             4: {
-                                'title': 'Success',
+                                'title': 'موفق',
                                 'class': ' label-light-success'
                             },
                             5: {
-                                'title': 'Info',
+                                'title': 'اطلاعات',
                                 'class': ' label-light-info'
                             },
                             6: {
-                                'title': 'Danger',
+                                'title': 'خطار',
                                 'class': ' label-light-danger'
                             },
                             7: {
-                                'title': 'Warning',
+                                'title': 'هشدار',
                                 'class': ' label-light-warning'
                             },
                         };
@@ -316,15 +316,15 @@ var KTDatatablesSearchOptionsColumnSearch = function() {
                     render: function(data, type, full, meta) {
                         var status = {
                             1: {
-                                'title': 'Online',
+                                'title': 'برخط',
                                 'state': 'danger'
                             },
                             2: {
-                                'title': 'Retail',
+                                'title': 'خرده فروشی',
                                 'state': 'primary'
                             },
                             3: {
-                                'title': 'Direct',
+                                'title': 'مستقیم',
                                 'state': 'success'
                             },
                         };

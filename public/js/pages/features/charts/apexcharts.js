@@ -68,7 +68,7 @@ var KTApexChartsDemo = function () {
 				},
 			},
 			xaxis: {
-				categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],
+				categories: ['ژانویه', 'فوریه', 'مارچ', 'آپریل', 'می', 'ژوئن', 'جولای', 'آگوئست', 'سپتامبر'],
 			},
 			colors: [primary]
 		};
@@ -81,10 +81,10 @@ var KTApexChartsDemo = function () {
 		const apexChart = "#chart_2";
 		var options = {
 			series: [{
-				name: 'series1',
+				name: 'سری یک',
 				data: [31, 40, 28, 51, 42, 109, 100]
 			}, {
-				name: 'series2',
+				name: 'سری دو',
 				data: [11, 32, 45, 32, 34, 52, 41]
 			}],
 			chart: {
@@ -117,13 +117,13 @@ var KTApexChartsDemo = function () {
 		const apexChart = "#chart_3";
 		var options = {
 			series: [{
-				name: 'Net Profit',
+				name: 'سود خالص',
 				data: [44, 55, 57, 56, 61, 58, 63, 60, 66]
 			}, {
-				name: 'Revenue',
+				name: 'درآمد',
 				data: [76, 85, 101, 98, 87, 105, 91, 114, 94]
 			}, {
-				name: 'Free Cash Flow',
+				name: 'نقدینگی',
 				data: [35, 41, 36, 26, 45, 48, 52, 53, 41]
 			}],
 			chart: {
@@ -146,7 +146,7 @@ var KTApexChartsDemo = function () {
 				colors: ['transparent']
 			},
 			xaxis: {
-				categories: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct'],
+				categories: ['فوریه', 'مارچ', 'آپریل', 'می', 'ژوئن', 'جولای', 'آگوئست', 'سپتامبر', 'Oct'],
 			},
 			yaxis: {
 				title: {
@@ -174,19 +174,19 @@ var KTApexChartsDemo = function () {
 		const apexChart = "#chart_4";
 		var options = {
 			series: [{
-				name: 'Marine Sprite',
+				name: 'دریایی',
 				data: [44, 55, 41, 37, 22, 43, 21]
 			}, {
-				name: 'Striking Calf',
+				name: 'اعتصاب',
 				data: [53, 32, 33, 52, 13, 43, 32]
 			}, {
-				name: 'Tank Picture',
+				name: 'تانک',
 				data: [12, 17, 11, 9, 15, 11, 20]
 			}, {
-				name: 'Bucket Slope',
+				name: 'سرباز',
 				data: [9, 7, 5, 8, 6, 9, 4]
 			}, {
-				name: 'Reborn Kid',
+				name: "بچه متولد شده",
 				data: [25, 12, 19, 32, 25, 24, 10]
 			}],
 			chart: {
@@ -245,15 +245,15 @@ var KTApexChartsDemo = function () {
 		const apexChart = "#chart_5";
 		var options = {
 			series: [{
-				name: 'Income',
+				name: 'درآمد',
 				type: 'column',
 				data: [1.4, 2, 2.5, 1.5, 2.5, 2.8, 3.8, 4.6]
 			}, {
-				name: 'Cashflow',
+				name: 'جریان نقدی',
 				type: 'column',
 				data: [1.1, 3, 3.1, 4, 4.1, 4.9, 6.5, 8.5]
 			}, {
-				name: 'Revenue',
+				name: 'درآمد',
 				type: 'line',
 				data: [20, 29, 37, 36, 44, 45, 50, 58]
 			}],
@@ -301,7 +301,7 @@ var KTApexChartsDemo = function () {
 					}
 				},
 				{
-					seriesName: 'Income',
+					seriesName: 'درآمد',
 					opposite: true,
 					axisTicks: {
 						show: true,
@@ -323,7 +323,7 @@ var KTApexChartsDemo = function () {
 					},
 				},
 				{
-					seriesName: 'Revenue',
+					seriesName: 'درآمد',
 					opposite: true,
 					axisTicks: {
 						show: true,
@@ -725,28 +725,28 @@ var KTApexChartsDemo = function () {
 		const apexChart = "#chart_8";
 		var options = {
 			series: [{
-				name: 'Bubble1',
+				name: 'حباب1',
 				data: generateBubbleData(new Date('11 Feb 2017 GMT').getTime(), 20, {
 				  min: 10,
 				  max: 60
 				})
 			  },
 			  {
-				name: 'Bubble2',
+				name: 'حباب2',
 				data: generateBubbleData(new Date('11 Feb 2017 GMT').getTime(), 20, {
 				  min: 10,
 				  max: 60
 				})
 			  },
 			  {
-				name: 'Bubble3',
+				name: 'حباب3',
 				data: generateBubbleData(new Date('11 Feb 2017 GMT').getTime(), 20, {
 				  min: 10,
 				  max: 60
 				})
 			  },
 			  {
-				name: 'Bubble4',
+				name: 'حباب4',
 				data: generateBubbleData(new Date('11 Feb 2017 GMT').getTime(), 20, {
 				  min: 10,
 				  max: 60
@@ -822,63 +822,63 @@ var KTApexChartsDemo = function () {
 		const apexChart = "#chart_10";
 		var options = {
 			series: [{
-				name: 'Jan',
+				name: 'ژانویه',
 				data: generateData(20, {
 					min: -30,
 					max: 55
 				})
 			},
 			{
-				name: 'Feb',
+				name: 'فوریه',
 				data: generateData(20, {
 					min: -30,
 					max: 55
 				})
 			},
 			{
-				name: 'Mar',
+				name: 'مارچ',
 				data: generateData(20, {
 					min: -30,
 					max: 55
 				})
 			},
 			{
-				name: 'Apr',
+				name: 'آپریل',
 				data: generateData(20, {
 					min: -30,
 					max: 55
 				})
 			},
 			{
-				name: 'May',
+				name: 'می',
 				data: generateData(20, {
 					min: -30,
 					max: 55
 				})
 			},
 			{
-				name: 'Jun',
+				name: 'ژوئن',
 				data: generateData(20, {
 					min: -30,
 					max: 55
 				})
 			},
 			{
-				name: 'Jul',
+				name: 'جولای',
 				data: generateData(20, {
 					min: -30,
 					max: 55
 				})
 			},
 			{
-				name: 'Aug',
+				name: 'آگوئست',
 				data: generateData(20, {
 					min: -30,
 					max: 55
 				})
 			},
 			{
-				name: 'Sep',
+				name: 'سپتامبر',
 				data: generateData(20, {
 					min: -30,
 					max: 55

@@ -12,7 +12,7 @@ var KTDatatablesBasicPaginations = function() {
 				{
 					targets: -1,
 					width: '125px',
-					title: 'Actions',
+					title: 'عملیات',
 					orderable: false,
 					render: function(data, type, full, meta) {
 						return '\
@@ -30,24 +30,24 @@ var KTDatatablesBasicPaginations = function() {
 	                            <div class="dropdown-menu dropdown-menu-sm dropdown-menu-right">\
 	                                <ul class="navi flex-column navi-hover py-2">\
 	                                    <li class="navi-header font-weight-bolder text-uppercase font-size-xs text-primary pb-2">\
-	                                        Choose an action:\
+	                                        انتخاب عملیات:\
 	                                    </li>\
 	                                    <li class="navi-item">\
 	                                        <a href="#" class="navi-link">\
 	                                            <span class="navi-icon"><i class="la la-print"></i></span>\
-	                                            <span class="navi-text">Print</span>\
+	                                            <span class="navi-text">پرینت</span>\
 	                                        </a>\
 	                                    </li>\
 	                                    <li class="navi-item">\
 	                                        <a href="#" class="navi-link">\
 	                                            <span class="navi-icon"><i class="la la-copy"></i></span>\
-	                                            <span class="navi-text">Copy</span>\
+	                                            <span class="navi-text">کپی</span>\
 	                                        </a>\
 	                                    </li>\
 	                                    <li class="navi-item">\
 	                                        <a href="#" class="navi-link">\
 	                                            <span class="navi-icon"><i class="la la-file-excel-o"></i></span>\
-	                                            <span class="navi-text">Excel</span>\
+	                                            <span class="navi-text">اکسل</span>\
 	                                        </a>\
 	                                    </li>\
 	                                    <li class="navi-item">\
@@ -95,13 +95,13 @@ var KTDatatablesBasicPaginations = function() {
 					width: '75px',
 					render: function(data, type, full, meta) {
 						var status = {
-							1: {'title': 'Pending', 'class': 'label-light-success'},
-							2: {'title': 'Delivered', 'class': ' label-light-danger'},
-							3: {'title': 'Canceled', 'class': ' label-light-primary'},
-							4: {'title': 'Success', 'class': ' label-light-success'},
-							5: {'title': 'Info', 'class': ' label-light-info'},
-							6: {'title': 'Danger', 'class': ' label-light-danger'},
-							7: {'title': 'Warning', 'class': ' label-light-warning'},
+							1: {'title': 'در حال انجام', 'class': 'label-light-success'},
+							2: {'title': 'تحویل داده شده', 'class': ' label-light-danger'},
+							3: {'title': 'لغو شده', 'class': ' label-light-primary'},
+							4: {'title': 'موفق', 'class': ' label-light-success'},
+							5: {'title': 'اطلاعات', 'class': ' label-light-info'},
+							6: {'title': 'خطار', 'class': ' label-light-danger'},
+							7: {'title': 'هشدار', 'class': ' label-light-warning'},
 						};
 						if (typeof status[data] === 'undefined') {
 							return data;
@@ -114,9 +114,9 @@ var KTDatatablesBasicPaginations = function() {
 					width: '75px',
 					render: function(data, type, full, meta) {
 						var status = {
-							1: {'title': 'Online', 'state': 'danger'},
-							2: {'title': 'Retail', 'state': 'primary'},
-							3: {'title': 'Direct', 'state': 'success'},
+							1: {'title': 'برخط', 'state': 'danger'},
+							2: {'title': 'خرده فروشی', 'state': 'primary'},
+							3: {'title': 'مستقیم', 'state': 'success'},
 						};
 						if (typeof status[data] === 'undefined') {
 							return data;

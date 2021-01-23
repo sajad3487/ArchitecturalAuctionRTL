@@ -17,7 +17,7 @@ var KTAppInbox = function() {
             modules: {
                 toolbar: {}
             },
-            placeholder: 'Type message...',
+            placeholder: 'پیام را تایپ کنید ...',
             theme: 'snow'
         };
 

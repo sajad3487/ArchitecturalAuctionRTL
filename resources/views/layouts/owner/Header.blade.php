@@ -25,7 +25,8 @@
                             <span class="symbol-label font-size-h5 font-weight-bold">S</span>
                         @else
                             <img style="width: 45px" src="{{$user->profile_picture}}" alt="">
-                        @endif                    </span>
+                        @endif
+                    </span>
                 </div>
             </div>
             <!--end::User-->

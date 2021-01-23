@@ -14,7 +14,7 @@ var KTDatatablesExtensionsRowgroup = function() {
 			columnDefs: [
 				{
 					targets: -1,
-					title: 'Actions',
+					title: 'عملیات',
 					orderable: false,
 					render: function(data, type, full, meta) {
 						return '\
@@ -44,13 +44,13 @@ var KTDatatablesExtensionsRowgroup = function() {
 					targets: 8,
 					render: function(data, type, full, meta) {
 						var status = {
-							1: {'title': 'Pending', 'class': 'label-light-primary'},
-							2: {'title': 'Delivered', 'class': ' label-light-danger'},
-							3: {'title': 'Canceled', 'class': ' label-light-primary'},
-							4: {'title': 'Success', 'class': ' label-light-success'},
-							5: {'title': 'Info', 'class': ' label-light-info'},
-							6: {'title': 'Danger', 'class': ' label-light-danger'},
-							7: {'title': 'Warning', 'class': ' label-light-warning'},
+							1: {'title': 'در حال انجام', 'class': 'label-light-primary'},
+							2: {'title': 'تحویل داده شده', 'class': ' label-light-danger'},
+							3: {'title': 'لغو شده', 'class': ' label-light-primary'},
+							4: {'title': 'موفق', 'class': ' label-light-success'},
+							5: {'title': 'اطلاعات', 'class': ' label-light-info'},
+							6: {'title': 'خطار', 'class': ' label-light-danger'},
+							7: {'title': 'هشدار', 'class': ' label-light-warning'},
 						};
 						if (typeof status[data] === 'undefined') {
 							return data;
@@ -63,9 +63,9 @@ var KTDatatablesExtensionsRowgroup = function() {
 					targets: 9,
 					render: function(data, type, full, meta) {
 						var status = {
-							1: {'title': 'Online', 'state': 'danger'},
-							2: {'title': 'Retail', 'state': 'primary'},
-							3: {'title': 'Direct', 'state': 'success'},
+							1: {'title': 'برخط', 'state': 'danger'},
+							2: {'title': 'خرده فروشی', 'state': 'primary'},
+							3: {'title': 'مستقیم', 'state': 'success'},
 						};
 						if (typeof status[data] === 'undefined') {
 							return data;

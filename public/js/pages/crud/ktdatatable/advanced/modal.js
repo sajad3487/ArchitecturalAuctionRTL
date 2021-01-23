@@ -48,52 +48,52 @@ var KTDatatableModal = function() {
                 textAlign: 'center',
             }, {
                 field: 'FirstName',
-                title: 'First Name',
+                title: 'نام',
                 sortable: 'asc',
             }, {
                 field: 'LastName',
-                title: 'Last Name',
+                title: 'نام خانوادگی',
             }, {
                 field: 'Company',
-                title: 'Company',
+                title: 'شرکت',
             }, {
                 field: 'Email',
-                title: 'Email',
+                title: 'ایمیل',
             }, {
                 field: 'Phone',
-                title: 'Phone',
+                title: 'تلفن',
             }, {
                 field: 'Status',
-                title: 'Status',
+                title: 'وضعیت',
                 // callback function support for column rendering
                 template: function(row) {
                     var status = {
                         1: {
-                            'title': 'Pending',
+                            'title': 'در حال انجام',
                             'class': 'label-light-primary'
                         },
                         2: {
-                            'title': 'Delivered',
+                            'title': 'تحویل داده شده',
                             'class': ' label-light-success'
                         },
                         3: {
-                            'title': 'Canceled',
+                            'title': 'لغو شده',
                             'class': ' label-light-primary'
                         },
                         4: {
-                            'title': 'Success',
+                            'title': 'موفق',
                             'class': ' label-light-success'
                         },
                         5: {
-                            'title': 'Info',
+                            'title': 'اطلاعات',
                             'class': ' label-light-info'
                         },
                         6: {
-                            'title': 'Danger',
+                            'title': 'خطار',
                             'class': ' label-light-danger'
                         },
                         7: {
-                            'title': 'Warning',
+                            'title': 'هشدار',
                             'class': ' label-light-warning'
                         },
                     };
@@ -101,21 +101,21 @@ var KTDatatableModal = function() {
                 },
             }, {
                 field: 'Type',
-                title: 'Type',
+                title: 'نوع',
                 autoHide: false,
                 // callback function support for column rendering
                 template: function(row) {
                     var status = {
                         1: {
-                            'title': 'Online',
+                            'title': 'برخط',
                             'state': 'danger'
                         },
                         2: {
-                            'title': 'Retail',
+                            'title': 'خرده فروشی',
                             'state': 'primary'
                         },
                         3: {
-                            'title': 'Direct',
+                            'title': 'مستقیم',
                             'state': 'accent'
                         },
                     };
@@ -126,7 +126,7 @@ var KTDatatableModal = function() {
             }, {
                 field: 'Actions',
                 width: 130,
-                title: 'Actions',
+                title: 'عملیات',
                 sortable: false,
                 overflow: 'visible',
                 textAlign: 'left',
@@ -134,7 +134,7 @@ var KTDatatableModal = function() {
                 template: function(row) {
                     return '\
 		                  <button data-record-id="' + row.RecordID + '" class="btn btn-sm btn-clean" title="View records">\
-		                      <i class="flaticon2-document"></i> Details\
+		                      <i class="flaticon2-document"></i> جزییات\
 		                  </button>';
                 },
             }],
@@ -203,57 +203,57 @@ var KTDatatableModal = function() {
                 width: 30,
             }, {
                 field: 'OrderID',
-                title: 'Order ID',
+                title: 'آیدی',
                 template: function(row) {
                     return '<span>' + row.OrderID + ' - ' + row.ShipCountry + '</span>';
                 },
             }, {
                 field: 'ShipCountry',
-                title: 'Country',
+                title: 'کشور',
                 width: 100,
             }, {
                 field: 'ShipAddress',
-                title: 'Ship Address',
+                title: 'آدرس',
             }, {
                 field: 'ShipName',
-                title: 'Ship Name',
+                title: 'نام کشتی',
                 autoHide: false,
             }, {
                 field: 'TotalPayment',
-                title: 'Payment',
+                title: 'پرداخت',
                 type: 'number',
             }, {
                 field: 'Status',
-                title: 'Status',
+                title: 'وضعیت',
                 // callback function support for column rendering
                 template: function(row) {
                     var status = {
                         1: {
-                            'title': 'Pending',
+                            'title': 'در حال انجام',
                             'class': 'label-primary'
                         },
                         2: {
-                            'title': 'Delivered',
+                            'title': 'تحویل داده شده',
                             'class': ' label-success'
                         },
                         3: {
-                            'title': 'Canceled',
+                            'title': 'لغو شده',
                             'class': ' label-primary'
                         },
                         4: {
-                            'title': 'Success',
+                            'title': 'موفق',
                             'class': ' label-success'
                         },
                         5: {
-                            'title': 'Info',
+                            'title': 'اطلاعات',
                             'class': ' label-info'
                         },
                         6: {
-                            'title': 'Danger',
+                            'title': 'خطار',
                             'class': ' label-danger'
                         },
                         7: {
-                            'title': 'Warning',
+                            'title': 'هشدار',
                             'class': ' label-warning'
                         },
                     };
@@ -261,21 +261,21 @@ var KTDatatableModal = function() {
                 },
             }, {
                 field: 'Type',
-                title: 'Type',
+                title: 'نوع',
                 autoHide: false,
                 // callback function support for column rendering
                 template: function(row) {
                     var status = {
                         1: {
-                            'title': 'Online',
+                            'title': 'برخط',
                             'state': 'danger'
                         },
                         2: {
-                            'title': 'Retail',
+                            'title': 'خرده فروشی',
                             'state': 'primary'
                         },
                         3: {
-                            'title': 'Direct',
+                            'title': 'مستقیم',
                             'state': 'accent'
                         },
                     };
@@ -360,53 +360,53 @@ var KTDatatableModal = function() {
                 textAlign: 'center',
             }, {
                 field: 'employee_id',
-                title: 'Employee ID',
+                title: 'شناسه کارمند',
             }, {
                 field: 'name',
-                title: 'Name',
+                title: 'نام',
                 template: function(row) {
                     return row.first_name + ' ' + row.last_name;
                 },
             }, {
                 field: 'hire_date',
-                title: 'Hire Date',
+                title: 'تاریخ استخدام',
                 type: 'date',
                 format: 'MM/DD/YYYY',
             }, {
                 field: 'gender',
-                title: 'Gender',
+                title: 'جنسیت',
             }, {
                 field: 'status',
-                title: 'Status',
+                title: 'وضعیت',
                 // callback function support for column rendering
                 template: function(row) {
                     var status = {
                         1: {
-                            'title': 'Pending',
+                            'title': 'در حال انجام',
                             'class': 'label-light-primary'
                         },
                         2: {
-                            'title': 'Delivered',
+                            'title': 'تحویل داده شده',
                             'class': ' label-light-success'
                         },
                         3: {
-                            'title': 'Canceled',
+                            'title': 'لغو شده',
                             'class': ' label-light-primary'
                         },
                         4: {
-                            'title': 'Success',
+                            'title': 'موفق',
                             'class': ' label-light-success'
                         },
                         5: {
-                            'title': 'Info',
+                            'title': 'اطلاعات',
                             'class': ' label-light-info'
                         },
                         6: {
-                            'title': 'Danger',
+                            'title': 'خطار',
                             'class': ' label-light-danger'
                         },
                         7: {
-                            'title': 'Warning',
+                            'title': 'هشدار',
                             'class': ' label-light-warning'
                         },
                     };
@@ -414,21 +414,21 @@ var KTDatatableModal = function() {
                 },
             }, {
                 field: 'type',
-                title: 'Type',
+                title: 'نوع',
                 autoHide: false,
                 // callback function support for column rendering
                 template: function(row) {
                     var status = {
                         1: {
-                            'title': 'Online',
+                            'title': 'برخط',
                             'state': 'danger'
                         },
                         2: {
-                            'title': 'Retail',
+                            'title': 'خرده فروشی',
                             'state': 'primary'
                         },
                         3: {
-                            'title': 'Direct',
+                            'title': 'مستقیم',
                             'state': 'accent'
                         },
                     };
@@ -438,7 +438,7 @@ var KTDatatableModal = function() {
                 },
             }, {
                 field: 'Actions',
-                title: 'Actions',
+                title: 'عملیات',
                 sortable: false,
                 width: 125,
                 overflow: 'visible',
@@ -459,24 +459,24 @@ var KTDatatableModal = function() {
                             <div class="dropdown-menu dropdown-menu-sm dropdown-menu-right">\
                                 <ul class="navi flex-column navi-hover py-2">\
                                     <li class="navi-header font-weight-bolder text-uppercase font-size-xs text-primary pb-2">\
-                                        Choose an action:\
+                                        انتخاب عملیات:\
                                     </li>\
                                     <li class="navi-item">\
                                         <a href="#" class="navi-link">\
                                             <span class="navi-icon"><i class="la la-print"></i></span>\
-                                            <span class="navi-text">Print</span>\
+                                            <span class="navi-text">پرینت</span>\
                                         </a>\
                                     </li>\
                                     <li class="navi-item">\
                                         <a href="#" class="navi-link">\
                                             <span class="navi-icon"><i class="la la-copy"></i></span>\
-                                            <span class="navi-text">Copy</span>\
+                                            <span class="navi-text">کپی</span>\
                                         </a>\
                                     </li>\
                                     <li class="navi-item">\
                                         <a href="#" class="navi-link">\
                                             <span class="navi-icon"><i class="la la-file-excel-o"></i></span>\
-                                            <span class="navi-text">Excel</span>\
+                                            <span class="navi-text">اکسل</span>\
                                         </a>\
                                     </li>\
                                     <li class="navi-item">\
@@ -601,7 +601,7 @@ var KTDatatableModal = function() {
                 textAlign: 'center',
             }, {
                 field: 'OrderID',
-                title: 'Profile Picture',
+                title: 'پروفایل',
                 template: function(data, i) {
                     var number = KTUtil.getRandomInt(1, 14);
                     var user_img = 'background-image:url(\'assets/media/users/100_' + number + '.jpg\')';
@@ -648,47 +648,47 @@ var KTDatatableModal = function() {
                 },
             }, {
                 field: 'CompanyAgent',
-                title: 'Name',
+                title: 'نام',
             }, {
                 field: 'ShipDate',
-                title: 'Ship Date',
+                title: 'تاریخ حمل',
                 type: 'date',
                 format: 'MM/DD/YYYY',
             }, {
                 field: 'ShipCountry',
-                title: 'Ship Country',
+                title: 'کشور کشتی',
             }, {
                 field: 'Status',
-                title: 'Status',
+                title: 'وضعیت',
                 // callback function support for column rendering
                 template: function(row) {
                     var status = {
                         1: {
-                            'title': 'Pending',
+                            'title': 'در حال انجام',
                             'class': 'label-light-primary'
                         },
                         2: {
-                            'title': 'Delivered',
+                            'title': 'تحویل داده شده',
                             'class': ' label-light-success'
                         },
                         3: {
-                            'title': 'Canceled',
+                            'title': 'لغو شده',
                             'class': ' label-light-primary'
                         },
                         4: {
-                            'title': 'Success',
+                            'title': 'موفق',
                             'class': ' label-light-success'
                         },
                         5: {
-                            'title': 'Info',
+                            'title': 'اطلاعات',
                             'class': ' label-light-info'
                         },
                         6: {
-                            'title': 'Danger',
+                            'title': 'خطار',
                             'class': ' label-light-danger'
                         },
                         7: {
-                            'title': 'Warning',
+                            'title': 'هشدار',
                             'class': ' label-light-warning'
                         },
                     };
@@ -696,21 +696,21 @@ var KTDatatableModal = function() {
                 },
             }, {
                 field: 'Type',
-                title: 'Type',
+                title: 'نوع',
                 autoHide: false,
                 // callback function support for column rendering
                 template: function(row) {
                     var status = {
                         1: {
-                            'title': 'Online',
+                            'title': 'برخط',
                             'state': 'danger'
                         },
                         2: {
-                            'title': 'Retail',
+                            'title': 'خرده فروشی',
                             'state': 'primary'
                         },
                         3: {
-                            'title': 'Direct',
+                            'title': 'مستقیم',
                             'state': 'success'
                         },
                     };
@@ -719,7 +719,7 @@ var KTDatatableModal = function() {
                 },
             }, {
                 field: 'Actions',
-                title: 'Actions',
+                title: 'عملیات',
                 sortable: false,
                 width: 125,
                 overflow: 'visible',
@@ -740,24 +740,24 @@ var KTDatatableModal = function() {
                             <div class="dropdown-menu dropdown-menu-sm dropdown-menu-right">\
                                 <ul class="navi flex-column navi-hover py-2">\
                                     <li class="navi-header font-weight-bolder text-uppercase font-size-xs text-primary pb-2">\
-                                        Choose an action:\
+                                        انتخاب عملیات:\
                                     </li>\
                                     <li class="navi-item">\
                                         <a href="#" class="navi-link">\
                                             <span class="navi-icon"><i class="la la-print"></i></span>\
-                                            <span class="navi-text">Print</span>\
+                                            <span class="navi-text">پرینت</span>\
                                         </a>\
                                     </li>\
                                     <li class="navi-item">\
                                         <a href="#" class="navi-link">\
                                             <span class="navi-icon"><i class="la la-copy"></i></span>\
-                                            <span class="navi-text">Copy</span>\
+                                            <span class="navi-text">کپی</span>\
                                         </a>\
                                     </li>\
                                     <li class="navi-item">\
                                         <a href="#" class="navi-link">\
                                             <span class="navi-icon"><i class="la la-file-excel-o"></i></span>\
-                                            <span class="navi-text">Excel</span>\
+                                            <span class="navi-text">اکسل</span>\
                                         </a>\
                                     </li>\
                                     <li class="navi-item">\

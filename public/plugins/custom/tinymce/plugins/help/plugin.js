@@ -446,7 +446,7 @@
       },
       {
         key: 'directionality',
-        name: 'Directionality'
+        name: 'مستقیمionality'
       },
       {
         key: 'emoticons',

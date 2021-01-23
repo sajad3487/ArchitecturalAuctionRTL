@@ -14,7 +14,7 @@ var KTDatatablesDataSourceHtml = function() {
 			columnDefs: [
 				{
 					targets: -1,
-					title: 'Actions',
+					title: 'عملیات',
 					orderable: false,
 					render: function(data, type, full, meta) {
 						return '\

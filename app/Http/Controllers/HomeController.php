@@ -70,13 +70,13 @@ class HomeController extends Controller
         $projects = $this->projectService->getOwnerActiveProject ($user->id);
         $active = 1;
         $categories = $this->categoryService->getAllCategory();
-        return view('owner.index',compact('active','user','projects','categories'));
+        return view('owner.fa.index',compact('active','user','projects','categories'));
     }
 
     public function owner_profile (){
         $user = auth()->user();
         $active = 5;
-        return view('owner.profile',compact('user','active'));
+        return view('owner.fa.profile',compact('user','active'));
     }
 
     public function updateProfile (Request $request){

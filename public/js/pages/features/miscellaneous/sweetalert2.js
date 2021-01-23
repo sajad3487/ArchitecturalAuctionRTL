@@ -5,43 +5,43 @@ var KTSweetAlert2Demo = function () {
 	var _init = function () {
 		// Sweetalert Demo 1
 		$('#kt_sweetalert_demo_1').click(function (e) {
-			Swal.fire('Good job!');
+			Swal.fire('آفرین!');
 		});
 
 		// Sweetalert Demo 2
 		$('#kt_sweetalert_demo_2').click(function (e) {
-			Swal.fire("Here's the title!", "...and here's the text!");
+			Swal.fire("عنوان اینجا قرار میگیره", "و اینجا می تونید متن اصلی رو قرار بدید");
 		});
 
 		// Sweetalert Demo 3
 		$('#kt_sweetalert_demo_3_1').click(function (e) {
-			Swal.fire("Good job!", "You clicked the button!", "warning");
+			Swal.fire("آفرین!", "کلیک کنید روی دکمه!", "warning");
 		});
 
 		$('#kt_sweetalert_demo_3_2').click(function (e) {
-			Swal.fire("Good job!", "You clicked the button!", "error");
+			Swal.fire("آفرین!", "کلیک کنید روی دکمه!", "error");
 		});
 
 		$('#kt_sweetalert_demo_3_3').click(function (e) {
-			Swal.fire("Good job!", "You clicked the button!", "success");
+			Swal.fire("آفرین!", "کلیک کنید روی دکمه!", "success");
 		});
 
 		$('#kt_sweetalert_demo_3_4').click(function (e) {
-			Swal.fire("Good job!", "You clicked the button!", "info");
+			Swal.fire("آفرین!", "کلیک کنید روی دکمه!", "info");
 		});
 
 		$('#kt_sweetalert_demo_3_5').click(function (e) {
-			Swal.fire("Good job!", "You clicked the button!", "question");
+			Swal.fire("آفرین!", "کلیک کنید روی دکمه!", "question");
 		});
 
 		// Sweetalert Demo 4
 		$("#kt_sweetalert_demo_4").click(function (e) {
 			Swal.fire({
-				title: "Good job!",
-				text: "You clicked the button!",
+				title: "آفرین!",
+				text: "کلیک کنید روی دکمه!",
 				icon: "success",
 				buttonsStyling: false,
-				confirmButtonText: "Confirm me!",
+				confirmButtonText: "تایید کنید!",
 				customClass: {
 					confirmButton: "btn btn-primary"
 				}
@@ -51,13 +51,13 @@ var KTSweetAlert2Demo = function () {
 		// Sweetalert Demo 5
 		$("#kt_sweetalert_demo_5").click(function (e) {
 			Swal.fire({
-				title: "Good job!",
-				text: "You clicked the button!",
+				title: "آفرین!",
+				text: "کلیک کنید روی دکمه!",
 				icon: "success",
 				buttonsStyling: false,
-				confirmButtonText: "<i class='la la-headphones'></i> I am game!",
+				confirmButtonText: "<i class='la la-headphones'></i> من هستم!",
 				showCancelButton: true,
-				cancelButtonText: "<i class='la la-thumbs-down'></i> No, thanks",
+				cancelButtonText: "<i class='la la-thumbs-down'></i>نه ممنون",
 				customClass: {
 					confirmButton: "btn btn-danger",
 					cancelButton: "btn btn-default"
@@ -69,7 +69,7 @@ var KTSweetAlert2Demo = function () {
 			Swal.fire({
 				position: 'top-right',
 				icon: 'success',
-				title: 'Your work has been saved',
+				title: 'کار شما ذخیره شده است',
 				showConfirmButton: false,
 				timer: 1500
 			});
@@ -77,7 +77,7 @@ var KTSweetAlert2Demo = function () {
 
 		$('#kt_sweetalert_demo_7').click(function (e) {
 			Swal.fire({
-				title: 'jQuery HTML example',
+				title: 'نمونه اچ تی ام ال',
 				showClass: {
 			    	popup: 'animate__animated animate__wobble'
 			  	},
@@ -87,46 +87,48 @@ var KTSweetAlert2Demo = function () {
 		  	});
 		});
 
+
 		$('#kt_sweetalert_demo_8').click(function (e) {
 			Swal.fire({
-				title: 'Are you sure?',
-				text: "You won't be able to revert this!",
+				title: 'آیا مطمئن هستید؟',
+				text: "شما نمی توانید این را برگردانید!",
 				icon: 'warning',
 				showCancelButton: true,
-				confirmButtonText: 'Yes, delete it!'
+				confirmButtonText: 'بله حذف کن'
 			}).then(function (result) {
 				if (result.value) {
 					Swal.fire(
-						'Deleted!',
-						'Your file has been deleted.',
+						'حذف شد!',
+						'فایل شما با موفقیت حذف شد.',
 						'success'
 					)
 				}
 			});
 		});
 
+
 		$('#kt_sweetalert_demo_9').click(function (e) {
 			Swal.fire({
-				title: 'Are you sure?',
-				text: "You won't be able to revert this!",
+				title: 'آیا مطمئن هستید؟',
+				text: "شما نمی توانید این را برگردانید!",
 				icon: 'warning',
 				showCancelButton: true,
-				confirmButtonText: 'Yes, delete it!',
-				cancelButtonText: 'No, cancel!',
+				confirmButtonText: 'بله حذف کن',
+				cancelButtonText: 'نه کنسل کن',
 				reverseButtons: true
 			}).then(function (result) {
 				if (result.value) {
 					Swal.fire(
-						'Deleted!',
-						'Your file has been deleted.',
+						'حذف شده!',
+						'فایل شما حذف شد.',
 						'success'
 					)
 					// result.dismiss can be 'cancel', 'overlay',
 					// 'close', and 'timer'
 				} else if (result.dismiss === 'cancel') {
 					Swal.fire(
-						'Cancelled',
-						'Your imaginary file is safe :)',
+						'لغو شده',
+						'فایل شما حذف نشد :)',
 						'error'
 					)
 				}
@@ -135,8 +137,8 @@ var KTSweetAlert2Demo = function () {
 
 		$('#kt_sweetalert_demo_10').click(function (e) {
 			Swal.fire({
-				title: 'Sweet!',
-				text: 'Modal with a custom image.',
+				title: 'اسویت!',
+				text: 'با یک عکس سفارشی.',
 				imageUrl: 'https://unsplash.it/400/200',
 				imageWidth: 400,
 				imageHeight: 200,
@@ -147,15 +149,15 @@ var KTSweetAlert2Demo = function () {
 
 		$('#kt_sweetalert_demo_11').click(function (e) {
 			Swal.fire({
-				title: 'Auto close alert!',
-				text: 'I will close in 5 seconds.',
+				title: 'بسته شدن خودکار!',
+				text: 'بسته شدن در 5 ثانیه',
 				timer: 5000,
 				onOpen: function () {
 					Swal.showLoading()
 				}
 			}).then(function (result) {
 				if (result.dismiss === 'timer') {
-					console.log('I was closed by the timer')
+					console.log('من بسته شدم توسط تایمر خودکار')
 				}
 			})
 		});

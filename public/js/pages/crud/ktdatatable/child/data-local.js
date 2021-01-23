@@ -24,50 +24,50 @@ var KTDatatableChildDataLocalDemo = function() {
 			columns: [
 				{
 					field: 'OrderID',
-					title: 'Order ID',
+					title: 'آیدی',
 					template: function(row) {
 						return '<span>' + row.OrderID + ' - ' + row.ShipCountry + '</span>';
 					},
 				}, {
 					field: 'ShipCountry',
-					title: 'Country',
+					title: 'کشور',
 					width: 100
 				}, {
 					field: 'ShipAddress',
-					title: 'Ship Address',
+					title: 'آدرس',
 				}, {
 					field: 'ShipName',
-					title: 'Ship Name',
+					title: 'نام کشتی',
 				}, {
 					field: 'TotalPayment',
-					title: 'Payment',
+					title: 'پرداخت',
 					type: 'number',
 				}, {
 					field: 'Status',
-					title: 'Status',
+					title: 'وضعیت',
 					// callback function support for column rendering
 					template: function(row) {
 						var status = {
-							1: {'title': 'Pending', 'class': 'label-light-primary'},
-							2: {'title': 'Delivered', 'class': ' label-light-danger'},
-							3: {'title': 'Canceled', 'class': ' label-light-primary'},
-							4: {'title': 'Success', 'class': ' label-light-success'},
-							5: {'title': 'Info', 'class': ' label-light-info'},
-							6: {'title': 'Danger', 'class': ' label-light-danger'},
-							7: {'title': 'Warning', 'class': ' label-light-warning'},
+							1: {'title': 'در حال انجام', 'class': 'label-light-primary'},
+							2: {'title': 'تحویل داده شده', 'class': ' label-light-danger'},
+							3: {'title': 'لغو شده', 'class': ' label-light-primary'},
+							4: {'title': 'موفق', 'class': ' label-light-success'},
+							5: {'title': 'اطلاعات', 'class': ' label-light-info'},
+							6: {'title': 'خطار', 'class': ' label-light-danger'},
+							7: {'title': 'هشدار', 'class': ' label-light-warning'},
 						};
 						return '<span class="label ' + status[row.Status].class + ' label-inline font-weight-bold label-lg">' + status[row.Status].title + '</span>';
 					},
 				}, {
 					field: 'Type',
-					title: 'Type',
+					title: 'نوع',
 					autoHide: false,
 					// callback function support for column rendering
 					template: function(row) {
 						var status = {
-							1: {'title': 'Online', 'state': 'danger'},
-							2: {'title': 'Retail', 'state': 'primary'},
-							3: {'title': 'Direct', 'state': 'success'},
+							1: {'title': 'برخط', 'state': 'danger'},
+							2: {'title': 'خرده فروشی', 'state': 'primary'},
+							3: {'title': 'مستقیم', 'state': 'success'},
 						};
 						return '<span class="label label-' + status[row.Type].state + ' label-dot mr-2"></span><span class="font-weight-bold text-' +
 							status[row.Type].state + '">' +
@@ -473,42 +473,42 @@ var KTDatatableChildDataLocalDemo = function() {
 					textAlign: 'center',
 				}, {
 					field: 'FirstName',
-					title: 'First Name',
+					title: 'نام',
 				}, {
 					field: 'LastName',
-					title: 'Last Name',
+					title: 'نام خانوادگی',
 				}, {
 					field: 'Company',
-					title: 'Company',
+					title: 'شرکت',
 				}, {
 					field: 'Email',
-					title: 'Email',
+					title: 'ایمیل',
 				}, {
 					field: 'Status',
-					title: 'Status',
+					title: 'وضعیت',
 					// callback function support for column rendering
 					template: function(row) {
 						var status = {
-							1: {'title': 'Pending', 'class': 'label-primary'},
-							2: {'title': 'Delivered', 'class': ' label-danger'},
-							3: {'title': 'Canceled', 'class': ' label-primary'},
-							4: {'title': 'Success', 'class': ' label-success'},
-							5: {'title': 'Info', 'class': ' label-info'},
-							6: {'title': 'Danger', 'class': ' label-danger'},
-							7: {'title': 'Warning', 'class': ' label-warning'},
+							1: {'title': 'در حال انجام', 'class': 'label-primary'},
+							2: {'title': 'تحویل داده شده', 'class': ' label-danger'},
+							3: {'title': 'لغو شده', 'class': ' label-primary'},
+							4: {'title': 'موفق', 'class': ' label-success'},
+							5: {'title': 'اطلاعات', 'class': ' label-info'},
+							6: {'title': 'خطار', 'class': ' label-danger'},
+							7: {'title': 'هشدار', 'class': ' label-warning'},
 						};
 						return '<span class="label ' + status[row.Status].class + ' label-inline label-pill">' + status[row.Status].title + '</span>';
 					},
 				}, {
 					field: 'Type',
-					title: 'Type',
+					title: 'نوع',
 					autoHide: false,
 					// callback function support for column rendering
 					template: function(row) {
 						var status = {
-							1: {'title': 'Online', 'state': 'danger'},
-							2: {'title': 'Retail', 'state': 'primary'},
-							3: {'title': 'Direct', 'state': 'success'},
+							1: {'title': 'برخط', 'state': 'danger'},
+							2: {'title': 'خرده فروشی', 'state': 'primary'},
+							3: {'title': 'مستقیم', 'state': 'success'},
 						};
 						return '<span class="label label-' + status[row.Type].state + ' label-dot"></span>&nbsp;<span class="font-weight-bold text-' + status[row.Type].state +
 							'">' +
@@ -517,7 +517,7 @@ var KTDatatableChildDataLocalDemo = function() {
 				}, {
 					field: 'Actions',
 					width: 130,
-					title: 'Actions',
+					title: 'عملیات',
 					sortable: false,
 					overflow: 'visible',
 					template: function() {
@@ -536,24 +536,24 @@ var KTDatatableChildDataLocalDemo = function() {
 	                            <div class="dropdown-menu dropdown-menu-sm dropdown-menu-right">\
 	                                <ul class="navi flex-column navi-hover py-2">\
 	                                    <li class="navi-header font-weight-bolder text-uppercase font-size-xs text-primary pb-2">\
-	                                        Choose an action:\
+	                                        انتخاب عملیات:\
 	                                    </li>\
 	                                    <li class="navi-item">\
 	                                        <a href="#" class="navi-link">\
 	                                            <span class="navi-icon"><i class="la la-print"></i></span>\
-	                                            <span class="navi-text">Print</span>\
+	                                            <span class="navi-text">پرینت</span>\
 	                                        </a>\
 	                                    </li>\
 	                                    <li class="navi-item">\
 	                                        <a href="#" class="navi-link">\
 	                                            <span class="navi-icon"><i class="la la-copy"></i></span>\
-	                                            <span class="navi-text">Copy</span>\
+	                                            <span class="navi-text">کپی</span>\
 	                                        </a>\
 	                                    </li>\
 	                                    <li class="navi-item">\
 	                                        <a href="#" class="navi-link">\
 	                                            <span class="navi-icon"><i class="la la-file-excel-o"></i></span>\
-	                                            <span class="navi-text">Excel</span>\
+	                                            <span class="navi-text">اکسل</span>\
 	                                        </a>\
 	                                    </li>\
 	                                    <li class="navi-item">\

@@ -3161,14 +3161,14 @@
     var isNoneSizing$1 = isNoneSizing;
     var getPercentTableWidth$1 = getPercentTableWidth;
 
-    var ResizeDirection = {
+    var Resizeمستقیمion = {
       ltr: ltr,
       rtl: rtl
     };
 
-    var TableDirection = function (directionAt) {
+    var Tableمستقیمion = function (directionAt) {
       var auto = function (table) {
-        return directionAt(table).isRtl() ? ResizeDirection.rtl : ResizeDirection.ltr;
+        return directionAt(table).isRtl() ? Resizeمستقیمion.rtl : Resizeمستقیمion.ltr;
       };
       var delta = function (amount, table) {
         return auto(table).delta(amount, table);
@@ -4334,14 +4334,14 @@
       return /^(\d+(\.\d+)?)%$/.test(value);
     };
 
-    var getDirection = function (element) {
+    var getمستقیمion = function (element) {
       return get$2(element, 'direction') === 'rtl' ? 'rtl' : 'ltr';
     };
 
     var ltr$1 = { isRtl: constant(false) };
     var rtl$1 = { isRtl: constant(true) };
     var directionAt = function (element) {
-      var dir = getDirection(element);
+      var dir = getمستقیمion(element);
       return dir === 'rtl' ? rtl$1 : ltr$1;
     };
 
@@ -4497,12 +4497,12 @@
     };
 
     var enforcePercentage = function (editor, table) {
-      var direction = TableDirection(directionAt);
+      var direction = Tableمستقیمion(directionAt);
       var tableSizing = get$8(editor, table);
       convertToPercentSize(table, direction, tableSizing);
     };
     var enforcePixels = function (editor, table) {
-      var direction = TableDirection(directionAt);
+      var direction = Tableمستقیمion(directionAt);
       var tableSizing = get$8(editor, table);
       convertToPixelSize(table, direction, tableSizing);
     };
@@ -4561,7 +4561,7 @@
         });
       };
       editor.on('init', function () {
-        var direction = TableDirection(directionAt);
+        var direction = Tableمستقیمion(directionAt);
         var rawWire = get$9(editor);
         wire = Option.some(rawWire);
         if (hasObjectResizing(editor) && hasTableResizeBars(editor)) {
@@ -5959,7 +5959,7 @@
           removeDataStyle(table);
           var wire = lazyWire();
           var doc = Element.fromDom(editor.getDoc());
-          var direction = TableDirection(directionAt);
+          var direction = Tableمستقیمion(directionAt);
           var generators = cellOperations(mutate, doc, cloneFormats);
           var sizing = get$8(editor, table);
           return guard(table) ? operation(wire, table, target, generators, direction, sizing).bind(function (result) {
@@ -7800,29 +7800,29 @@
 
     var COLLAPSE_TO_LEFT = true;
     var COLLAPSE_TO_RIGHT = false;
-    var getCollapseDirection = function (rect, x) {
+    var getCollapseمستقیمion = function (rect, x) {
       return x - rect.left < rect.right - x ? COLLAPSE_TO_LEFT : COLLAPSE_TO_RIGHT;
     };
-    var createCollapsedNode = function (doc, target, collapseDirection) {
+    var createCollapsedNode = function (doc, target, collapseمستقیمion) {
       var r = doc.dom().createRange();
       r.selectNode(target.dom());
-      r.collapse(collapseDirection);
+      r.collapse(collapseمستقیمion);
       return r;
     };
     var locateInElement = function (doc, node, x) {
       var cursorRange = doc.dom().createRange();
       cursorRange.selectNode(node.dom());
       var rect = cursorRange.getBoundingClientRect();
-      var collapseDirection = getCollapseDirection(rect, x);
-      var f = collapseDirection === COLLAPSE_TO_LEFT ? first : last$1;
+      var collapseمستقیمion = getCollapseمستقیمion(rect, x);
+      var f = collapseمستقیمion === COLLAPSE_TO_LEFT ? first : last$1;
       return f(node).map(function (target) {
-        return createCollapsedNode(doc, target, collapseDirection);
+        return createCollapsedNode(doc, target, collapseمستقیمion);
       });
     };
     var locateInEmpty = function (doc, node, x) {
       var rect = node.dom().getBoundingClientRect();
-      var collapseDirection = getCollapseDirection(rect, x);
-      return Option.some(createCollapsedNode(doc, node, collapseDirection));
+      var collapseمستقیمion = getCollapseمستقیمion(rect, x);
+      return Option.some(createCollapsedNode(doc, node, collapseمستقیمion));
     };
     var search = function (doc, node, x) {
       var f = children(node).length === 0 ? locateInEmpty : locateInElement;

@@ -9,10 +9,10 @@ var KTFormControls = function () {
 					email: {
 						validators: {
 							notEmpty: {
-								message: 'Email is required'
+								message: 'ایمیل لازم است'
 							},
 							emailAddress: {
-								message: 'The value is not a valid email address'
+								message: "مقدار یک آدرس ایمیل معتبر نیست"
 							}
 						}
 					},
@@ -20,10 +20,10 @@ var KTFormControls = function () {
 					url: {
 						validators: {
 							notEmpty: {
-								message: 'Website URL is required'
+								message: 'آدرس وب سایت لازم است'
 							},
 							uri: {
-								message: 'The website address is not valid'
+								message: "آدرس وب سایت معتبر نیست"
 							}
 						}
 					},
@@ -31,10 +31,10 @@ var KTFormControls = function () {
 					digits: {
 						validators: {
 							notEmpty: {
-								message: 'Digits is required'
+								message: 'ارقام لازم است'
 							},
 							digits: {
-								message: 'The velue is not a valid digits'
+								message: "مقدار یک رقم معتبر نیست"
 							}
 						}
 					},
@@ -42,10 +42,10 @@ var KTFormControls = function () {
 					creditcard: {
 						validators: {
 							notEmpty: {
-								message: 'Credit card number is required'
+								message: "شماره کارت اعتباری لازم است"
 							},
 							creditCard: {
-								message: 'The credit card number is not valid'
+								message: "شماره کارت اعتباری معتبر نیست"
 							}
 						}
 					},
@@ -53,11 +53,11 @@ var KTFormControls = function () {
 					phone: {
 						validators: {
 							notEmpty: {
-								message: 'US phone number is required'
+								message: 'شماره تلفن ایالات متحده مورد نیاز است'
 							},
 							phone: {
 								country: 'US',
-								message: 'The value is not a valid US phone number'
+								message: "این مقدار شماره تلفن معتبر ایالات متحده نیست"
 							}
 						}
 					},
@@ -65,7 +65,7 @@ var KTFormControls = function () {
 					option: {
 						validators: {
 							notEmpty: {
-								message: 'Please select an option'
+								message: 'لطفا یک گزینه را انتخاب کنید'
 							}
 						}
 					},
@@ -75,7 +75,7 @@ var KTFormControls = function () {
 							choice: {
 								min:2,
 								max:5,
-								message: 'Please select at least 2 and maximum 5 options'
+								message: "لطفا حداقل 2 و حداکثر 5 گزینه را انتخاب کنید"
 							}
 						}
 					},
@@ -83,12 +83,12 @@ var KTFormControls = function () {
 					memo: {
 						validators: {
 							notEmpty: {
-								message: 'Please enter memo text'
+								message: "لطفا متن یادداشت را وارد کنید"
 							},
 							stringLength: {
 								min:50,
 								max:100,
-								message: 'Please enter a menu within text length range 50 and 100'
+								message: "لطفاً یک فهرست را در محدوده متن 50 و 100 وارد کنید"
 							}
 						}
 					},
@@ -97,7 +97,7 @@ var KTFormControls = function () {
 						validators: {
 							choice: {
 								min:1,
-								message: 'Please kindly check this'
+								message: "لطفا با مهربانی این را بررسی کنید"
 							}
 						}
 					},
@@ -107,7 +107,7 @@ var KTFormControls = function () {
 							choice: {
 								min:2,
 								max:5,
-								message: 'Please check at least 1 and maximum 2 options'
+								message: "لطفا حداقل 1 و حداکثر 2 گزینه را بررسی کنید"
 							}
 						}
 					},
@@ -116,7 +116,7 @@ var KTFormControls = function () {
 						validators: {
 							choice: {
 								min:1,
-								message: 'Please kindly check this'
+								message: "لطفا با مهربانی این را بررسی کنید"
 							}
 						}
 					},
@@ -143,41 +143,41 @@ var KTFormControls = function () {
 					billing_card_name: {
 						validators: {
 							notEmpty: {
-								message: 'Card Holder Name is required'
+								message: "نام دارنده کارت لازم است"
 							}
 						}
 					},
 					billing_card_number: {
 						validators: {
 							notEmpty: {
-								message: 'Credit card number is required'
+								message: "شماره کارت اعتباری لازم است"
 							},
 							creditCard: {
-								message: 'The credit card number is not valid'
+								message: "شماره کارت اعتباری معتبر نیست"
 							}
 						}
 					},
 					billing_card_exp_month: {
 						validators: {
 							notEmpty: {
-								message: 'Expiry Month is required'
+								message: "ماه انقضا لازم است"
 							}
 						}
 					},
 					billing_card_exp_year: {
 						validators: {
 							notEmpty: {
-								message: 'Expiry Year is required'
+								message: "سال انقضا لازم است"
 							}
 						}
 					},
 					billing_card_cvv: {
 						validators: {
 							notEmpty: {
-								message: 'CVV is required'
+								message: "CVV لازم است"
 							},
 							digits: {
-								message: 'The CVV velue is not a valid digits'
+								message: 'مقدار CVV یک رقم معتبر نیست'
 							}
 						}
 					},
@@ -185,32 +185,32 @@ var KTFormControls = function () {
 					billing_address_1: {
 						validators: {
 							notEmpty: {
-								message: 'Address 1 is required'
+								message: 'آدرس 1 الزامی است'
 							}
 						}
 					},
 					billing_city: {
 						validators: {
 							notEmpty: {
-								message: 'City 1 is required'
+								message: 'شهر 1 مورد نیاز است'
 							}
 						}
 					},
 					billing_state: {
 						validators: {
 							notEmpty: {
-								message: 'State 1 is required'
+								message: "حالت 1 لازم است"
 							}
 						}
 					},
 					billing_zip: {
 						validators: {
 							notEmpty: {
-								message: 'Zip Code is required'
+								message: 'کد پستی لازم است'
 							},
 							zipCode: {
 								country: 'US',
-								message: 'The Zip Code value is invalid'
+								message: "مقدار کد پستی نامعتبر است"
 							}
 						}
 					},
@@ -219,7 +219,7 @@ var KTFormControls = function () {
 						validators: {
 							choice: {
 								min:1,
-								message: 'Please kindly select delivery type'
+								message: 'لطفا نوع تحویل را لطفاً انتخاب کنید'
 							}
 						}
 					},
@@ -227,7 +227,7 @@ var KTFormControls = function () {
 						validators: {
 							choice: {
 								min:1,
-								message: 'Please kindly select package type'
+								message: "لطفاً نوع بسته را انتخاب کنید"
 							}
 						}
 					}

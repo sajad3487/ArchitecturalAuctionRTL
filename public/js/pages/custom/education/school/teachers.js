@@ -37,7 +37,7 @@ var KTAppsEducationSchoolTeacher = function() {
 			columns: [
 				 {
 					field: 'CompanyName',
-					title: 'Teacher',
+					title: 'معلمان',
 					width: 250,
 					template: function(data) {
 						var number = KTUtil.getRandomInt(1, 20);
@@ -68,7 +68,7 @@ var KTAppsEducationSchoolTeacher = function() {
 					}
 				}, {
 					field: 'CompanyAgent',
-					title: 'Department',
+					title: 'دپارتمان',
 					template: function(row) {
 						var output = '';
 
@@ -78,7 +78,7 @@ var KTAppsEducationSchoolTeacher = function() {
 					}
 				}, {
 					field: 'JoinedDate',
-					title: 'Joined',
+					title: "پیوست",
 					type: 'date',
 					width: 100,
 					format: 'MM/DD/YYYY',
@@ -91,7 +91,7 @@ var KTAppsEducationSchoolTeacher = function() {
 					},
 				}, {
 					field: 'Status',
-					title: 'Status',
+					title: 'وضعیت',
 					autoHide: false,
 					width: 100,
 					// callback function support for column rendering
@@ -99,16 +99,16 @@ var KTAppsEducationSchoolTeacher = function() {
 						var index = KTUtil.getRandomInt(1, 3);
 
 						var status = {
-							1: {'title': 'New', 'class': ' label-light-primary'},
-							2: {'title': 'Active', 'class': ' label-light-danger'},
-							3: {'title': 'In-active', 'class': ' label-light-info'},
+							1: {'title': 'جدید', 'class': ' label-light-primary'},
+							2: {'title': 'فعال', 'class': ' label-light-danger'},
+							3: {'title': 'غیر فعال', 'class': ' label-light-info'},
 						};
 
 						return '<span class="label label-lg font-weight-bold ' + status[index].class + ' label-inline">' + status[index].title + '</span>';
 					},
 				}, {
 					field: 'Actions',
-					title: 'Actions',
+					title: 'عملیات',
 					sortable: false,
 					width: 130,
 					overflow: 'visible',
@@ -130,24 +130,24 @@ var KTAppsEducationSchoolTeacher = function() {
 	                            <div class="dropdown-menu dropdown-menu-sm dropdown-menu-right">\
 	                                <ul class="navi flex-column navi-hover py-2">\
 	                                    <li class="navi-header font-weight-bolder text-uppercase font-size-xs text-primary pb-2">\
-	                                        Choose an action:\
+	                                        انتخاب عملیات:\
 	                                    </li>\
 	                                    <li class="navi-item">\
 	                                        <a href="#" class="navi-link">\
 	                                            <span class="navi-icon"><i class="la la-print"></i></span>\
-	                                            <span class="navi-text">Print</span>\
+	                                            <span class="navi-text">پرینت</span>\
 	                                        </a>\
 	                                    </li>\
 	                                    <li class="navi-item">\
 	                                        <a href="#" class="navi-link">\
 	                                            <span class="navi-icon"><i class="la la-copy"></i></span>\
-	                                            <span class="navi-text">Copy</span>\
+	                                            <span class="navi-text">کپی</span>\
 	                                        </a>\
 	                                    </li>\
 	                                    <li class="navi-item">\
 	                                        <a href="#" class="navi-link">\
 	                                            <span class="navi-icon"><i class="la la-file-excel-o"></i></span>\
-	                                            <span class="navi-text">Excel</span>\
+	                                            <span class="navi-text">اکسل</span>\
 	                                        </a>\
 	                                    </li>\
 	                                    <li class="navi-item">\
