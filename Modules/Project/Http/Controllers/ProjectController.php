@@ -130,7 +130,7 @@ class ProjectController extends Controller
     {
         $project = $this->projectService->getProject($id);
         $user = $this->userService->getUserById(auth()->id());
-        return view('owner.invoice', compact('project', 'user'));
+        return view('owner.fa.invoice', compact('project', 'user'));
     }
 
     public function calculate_net_price($category_id, $size)
@@ -160,7 +160,7 @@ class ProjectController extends Controller
         $images = $this->mediaService->getImagesOfProject($project->id);
         $proposals = $this->proposalService->getAllProposalsOfProject($project->id);
         $walls = $this->wallService->getWallOfProject($id);
-        return view('owner.owner_project', compact('active', 'user', 'project', 'images','proposals','walls'));
+        return view('owner.fa.owner_project', compact('active', 'user', 'project', 'images','proposals','walls'));
     }
 
     public function owner_edit_project($id)

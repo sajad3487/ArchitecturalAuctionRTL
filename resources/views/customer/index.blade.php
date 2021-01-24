@@ -64,7 +64,7 @@
                                         @foreach($categories as $category)
                                             <a href="{{url("/designer/project/$category->id/get_category")}}" class="btn btn-outline-primary mr-2">{{$category->title}}</a>
                                             @foreach($category->subCategory as $subCat)
-                                                <a href="{{url("/designer/project/$subCat->id/get_category")}}" class="btn btn-hover-light-primary mr-2">{{$category->title}}</a>
+                                                <a href="{{url("/designer/project/$subCat->id/get_category")}}" class="btn btn-hover-light-primary mr-2">{{$subCat->title}}</a>
                                             @endforeach
                                         @endforeach
                                     @endif

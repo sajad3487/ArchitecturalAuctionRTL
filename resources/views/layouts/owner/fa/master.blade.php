@@ -45,6 +45,9 @@ Renew حمایت کردن: https://www.rtl-theme.com/metronic-admin-html-templat
     <!--end::چیدمان تم ها-->
 
     <link rel="shortcut icon" href="{{asset('media/logos/fav.png')}}"/>
+    <link href="{{asset('css/pages/wizard/wizard-1.css')}}" rel="stylesheet" type="text/css"/>
+    <link href="{{asset('css/pages/wizard/wizard-3.css')}}" rel="stylesheet" type="text/css"/>
+    <link href="{{asset('css/comment.css')}}" rel="stylesheet" type="text/css"/>
 
 </head>
 <!--end::Head-->
@@ -515,6 +518,9 @@ Renew حمایت کردن: https://www.rtl-theme.com/metronic-admin-html-templat
 
 <!--begin::Page Scripts(used by this page)-->
 <script src="{{asset('js/pages/widgets.js?v=7.0.6')}}"></script>
+<script src="{{asset('js/pages/custom/wizard/wizard-3.js')}}"></script>
+<script src="{{asset('js/pages/crud/forms/widgets/bootstrap-datepicker.js')}}"></script>
+<script src="{{asset('js/pages/crud/ktdatatable/base/html-table.js')}}"></script>
 <!--end::Page Scripts-->
 </body>
 <!--end::Body-->
