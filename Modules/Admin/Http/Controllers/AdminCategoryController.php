@@ -43,7 +43,7 @@ class AdminCategoryController extends Controller
         $user = $this->userService->getUserById(auth()->id());
         $active = 3;
 
-        return view('admin.categories',compact('active','user','categories'));
+        return view('admin.fa.categories',compact('active','user','categories'));
     }
 
     public function create()
@@ -51,7 +51,7 @@ class AdminCategoryController extends Controller
         $parent_id = 0;
         $user = $this->userService->getUserById(auth()->id());
         $active = 3;
-        return view('admin.newCategory',compact('active','user','parent_id'));
+        return view('admin.fa.newCategory',compact('active','user','parent_id'));
     }
 
 
@@ -78,7 +78,7 @@ class AdminCategoryController extends Controller
         $user = $this->userService->getUserById(auth()->id());
         $category = $this->categoryService->getCategoryById($id);
         $active = 3;
-        return view('admin.newCategory',compact('user','category','active'));
+        return view('admin.fa.newCategory',compact('user','category','active'));
     }
 
     public function update(Request $request, $id)
@@ -103,6 +103,6 @@ class AdminCategoryController extends Controller
         $parent_id = $id;
         $user = $this->userService->getUserById(auth()->id());
         $active = 3;
-        return view('admin.newCategory',compact('active','user','parent_id'));
+        return view('admin.fa.newCategory',compact('active','user','parent_id'));
     }
 }

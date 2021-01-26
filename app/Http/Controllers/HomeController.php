@@ -56,13 +56,13 @@ class HomeController extends Controller
         $projects = $this->projectService->allActiveProject();
         $active = 1;
         $categories = $this->categoryService->getAllCategory();
-        return view('customer.index',compact('active','user','projects','categories'));
+        return view('customer.fa.index',compact('active','user','projects','categories'));
     }
 
     public function designer_profile (){
         $user = auth()->user();
         $active = 4;
-        return view('customer.profile',compact('user','active'));
+        return view('customer.fa.profile',compact('user','active'));
     }
 
     public function owner_index (){

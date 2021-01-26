@@ -38,21 +38,24 @@ class AdminController extends Controller
     public function index()
     {
         $active = 1;
-        return view('admin.dashboard', compact('active'));
+        $user = $this->userService->getUserById(auth()->id());
+        return view('admin.fa.dashboard', compact('active','user'));
     }
 
     public function customer()
     {
         $active = 2;
         $customers = $this->userService->getAllCustomer();
-        return view('admin.users', compact('customers'));
+        $user = $this->userService->getUserById(auth()->id());
+        return view('admin.fa.users', compact('customers','user','active'));
     }
 
     public function project()
     {
         $active = 4;
         $projects = $this->projectService->allActiveProject();
-        return view('admin.project', compact('projects','active'));
+        $user = $this->userService->getUserById(auth()->id());
+        return view('admin.fa.project', compact('projects','active','user'));
     }
 
 }

@@ -67,7 +67,7 @@
                                             <div class="font-weight-bold text-dark-50 font-size-sm pb-7"></div>
                                             <input type="text" class="d-none" id="deadline-{{$key}}" value="{{$project->deadline}}">
                                             <!--end::Text-->
-                                            <p class="pcounter" id="demo-{{$key}}"></p>
+                                            <h3 class="pcounter text-success" id="demo-{{$key}}"></h3>
 
                                             <script>
                                                 var deadline{{$key}} = document.getElementById('deadline-{{$key}}').value;
@@ -95,8 +95,8 @@
                                                         document.getElementById('demo-{{$key}}').style.color = "red";
                                                         clearInterval(x);
                                                     }else{
-                                                        document.getElementById('demo-{{$key}}').innerHTML = days{{$key}} + "d " + hours{{$key}} + "h "
-                                                            + minutes{{$key}} + "m " + seconds{{$key}} + "s ";
+                                                        document.getElementById('demo-{{$key}}').innerHTML = days{{$key}} + " روز " + hours{{$key}} + " ساعت "
+                                                            + minutes{{$key}} + " دقیقه " + seconds{{$key}} + " ثانیه ";
                                                     }
                                                 }, 1000);
                                             </script>
@@ -109,7 +109,7 @@
                                     <div class="d-flex flex-center mt-md-1" id="kt_sticky_toolbar_chat_toggler" data-toggle="tooltip" title="" data-placement="right" data-original-title="">
                                         <h6 class="col-6 px-0">Price : {{$project->net_price ?? ''}} $</h6>
 
-                                        <a href="{{url("owner/project/$project->id/view")}}" class="btn btn-outline-primary font-weight-bolder font-size-sm py-3 px-14">View</a>
+                                        <a href="{{url("owner/project/$project->id/view")}}" class="btn btn-outline-primary font-weight-bolder font-size-sm py-3 px-14">نمایش</a>
                                     </div>
                                     <!--end::Footer-->
                                 </div>

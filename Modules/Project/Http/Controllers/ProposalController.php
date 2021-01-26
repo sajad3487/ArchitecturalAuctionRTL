@@ -50,9 +50,9 @@ class ProposalController extends Controller
         $proposal = $this->proposalService->getProposalForDesigner($project_id, $user->id);
         if ($proposal != null) {
             $files = $this->mediaService->getFilesOfProposalForDesigner($proposal->id);
-            return view('customer.proposal', compact('project', 'user', 'active', 'proposal', 'files'));
+            return view('customer.fa.proposal', compact('project', 'user', 'active', 'proposal', 'files'));
         }
-        return view('customer.proposal', compact('project', 'user', 'active'));
+        return view('customer.fa.proposal', compact('project', 'user', 'active'));
     }
 
     public function designer_store_proposal(Request $request)
@@ -84,6 +84,6 @@ class ProposalController extends Controller
         $projects = $this->projectService->designerSentProposalProject($user->id);
         $active = 2;
 //        dd($user,$projects);
-        return view('customer.sent_proposal',compact('active','user','projects'));
+        return view('customer.fa.sent_proposal',compact('active','user','projects'));
     }
 }
